@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="dark" lang="lv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROIS | Google Ads</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary": "#c8c6c5","on-primary": "#002b75","on-primary-fixed-variant": "#003fa4",
+        "tertiary": "#ffb59d","secondary-fixed": "#e5e2e1","outline-variant": "#424656",
+        "error-container": "#93000a","primary": "#b3c5ff","inverse-primary": "#0054d6",
+        "on-secondary-fixed": "#1c1b1b","surface-container-low": "#1c1b1b",
+        "on-surface": "#e5e2e1","outline": "#8c90a1","on-secondary": "#313030",
+        "surface-bright": "#3a3939","on-primary-container": "#f8f7ff",
+        "primary-container": "#0066ff","surface-container": "#201f1f",
+        "primary-fixed": "#dae1ff","surface-dim": "#131313","on-background": "#e5e2e1",
+        "surface-container-lowest": "#0e0e0e","surface": "#131313",
+        "inverse-surface": "#e5e2e1","primary-fixed-dim": "#b3c5ff",
+        "surface-container-highest": "#353534","surface-container-high": "#2a2a2a",
+        "error": "#ffb4ab","on-error": "#690005","on-surface-variant": "#c2c6d8",
+        "background": "#131313","secondary-container": "#4a4949",
+        "surface-tint": "#b3c5ff","inverse-on-surface": "#313030","surface-variant": "#353534"
+      },
+      "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+      "fontFamily": {"headline": ["Manrope"],"body": ["Inter"],"label": ["Inter"]}
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.precision-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px); }
+.editorial-shadow { box-shadow: 0 40px 60px -15px rgba(0,0,0,0.5); }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body">
+
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
+<div class="hidden md:flex gap-10">
+<a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
+<a href="services.html" class="font-headline tracking-tight font-bold uppercase text-xs border-b-2 border-primary-container text-primary-container transition-colors duration-200">Pakalpojumi</a>
+<a href="case-studies.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Darbi</a>
+<a href="about.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Par mums</a>
+<a href="contact.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Kontakti</a>
+</div>
+<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+</nav>
+</header>
+
+<!-- Hero -->
+<section class="pt-40 pb-24 px-8 max-w-7xl mx-auto precision-grid">
+  <div class="flex flex-col md:flex-row justify-between items-start gap-16">
+    <div class="flex-1">
+      <p class="text-primary font-headline font-bold uppercase text-xs tracking-widest mb-6">Google Ads</p>
+      <h1 class="font-headline font-black text-6xl md:text-7xl tracking-tighter text-on-surface mb-8 leading-none">Reklāmas kas pārvērš klikšķus peļņā</h1>
+      <p class="text-on-surface/60 text-xl max-w-xl leading-relaxed mb-10">Izstrādājam un pārvaldām Google reklāmas kampaņas Latvijas uzņēmumiem. Katrs ieguldītais eiro strādā pēc iespējas efektīvāk.</p>
+      <div class="flex gap-4 flex-wrap">
+        <a href="contact.html" class="bg-primary-container text-on-primary-container px-8 py-4 font-headline font-bold text-sm uppercase tracking-widest hover:scale-105 transition-transform">Sākt kampaņu</a>
+        <a href="case-studies.html" class="border border-on-surface/20 text-on-surface px-8 py-4 font-headline font-bold text-sm uppercase tracking-widest hover:border-on-surface/60 transition-colors">Skatīt rezultātus</a>
+      </div>
+    </div>
+    <div class="text-right">
+      <div class="font-headline font-black text-8xl md:text-9xl text-primary leading-none">8.2×</div>
+      <div class="text-on-surface/40 text-sm mt-2 uppercase tracking-widest font-headline font-bold">Vidējais ROAS</div>
+    </div>
+  </div>
+</section>
+
+<!-- What's Included -->
+<section class="py-24 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto px-8">
+    <h2 class="font-headline font-black text-4xl md:text-5xl tracking-tighter text-on-surface mb-16">Kas iekļauts pakalpojumā</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-surface-container-low p-8">
+        <span class="material-symbols-outlined text-primary text-3xl mb-6 block">search</span>
+        <h3 class="font-headline font-bold text-lg text-on-surface mb-3">Google Search</h3>
+        <p class="text-on-surface/60 text-sm leading-relaxed">Reklāmas meklēšanas rezultātos — sasniedzam lietotājus brīdī, kad viņi aktīvi meklē jūsu produktus vai pakalpojumus.</p>
+      </div>
+      <div class="bg-surface-container-low p-8">
+        <span class="material-symbols-outlined text-primary text-3xl mb-6 block">all_inclusive</span>
+        <h3 class="font-headline font-bold text-lg text-on-surface mb-3">Performance Max</h3>
+        <p class="text-on-surface/60 text-sm leading-relaxed">Automatizētas kampaņas visā Google tīklā — Search, Display, YouTube, Shopping un Gmail vienlaicīgi.</p>
+      </div>
+      <div class="bg-surface-container-low p-8">
+        <span class="material-symbols-outlined text-primary text-3xl mb-6 block">shopping_cart</span>
+        <h3 class="font-headline font-bold text-lg text-on-surface mb-3">Shopping Ads</h3>
+        <p class="text-on-surface/60 text-sm leading-relaxed">Produktu reklāmas ar attēliem, cenām un vērtējumiem — ideāli piemērotas e-komercijas uzņēmumiem ar lielu produktu katalogu.</p>
+      </div>
+      <div class="bg-surface-container-low p-8">
+        <span class="material-symbols-outlined text-primary text-3xl mb-6 block">repeat</span>
+        <h3 class="font-headline font-bold text-lg text-on-surface mb-3">Remarketing</h3>
+        <p class="text-on-surface/60 text-sm leading-relaxed">Atgriežam vietnes apmeklētājus atpakaļ ar personalizētām reklāmām. Palielinām konversiju rādītājus un samazinām zaudēto pārdošanu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+  <h2 class="font-headline font-black text-4xl md:text-5xl tracking-tighter text-on-surface mb-16">Mūsu process</h2>
+  <div class="space-y-0">
+    <div class="flex gap-8 items-start border-b border-white/5 py-8">
+      <div class="font-headline font-black text-5xl text-primary w-20 shrink-0">01</div>
+      <div>
+        <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Audits</h3>
+        <p class="text-on-surface/60 leading-relaxed">Analizējam jūsu esošo Google Ads kontu vai konkurentu stratēģijas, identificējam iespējas un vājās vietas.</p>
+      </div>
+    </div>
+    <div class="flex gap-8 items-start border-b border-white/5 py-8">
+      <div class="font-headline font-black text-5xl text-primary w-20 shrink-0">02</div>
+      <div>
+        <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Atslēgvārdi</h3>
+        <p class="text-on-surface/60 leading-relaxed">Veicam padziļinātu atslēgvārdu izpēti — identificējam augstas konversijas vārdkopas ar optimālu CPC un meklēšanas apjomu.</p>
+      </div>
+    </div>
+    <div class="flex gap-8 items-start border-b border-white/5 py-8">
+      <div class="font-headline font-black text-5xl text-primary w-20 shrink-0">03</div>
+      <div>
+        <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Reklāmu izveide</h3>
+        <p class="text-on-surface/60 leading-relaxed">Rakstām pārliecinošus reklāmas tekstus, veidojam vizuālos materiālus un konfigurējam kampaņu struktūru ar precīzu mērķauditorijas segmentāciju.</p>
+      </div>
+    </div>
+    <div class="flex gap-8 items-start border-b border-white/5 py-8">
+      <div class="font-headline font-black text-5xl text-primary w-20 shrink-0">04</div>
+      <div>
+        <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Uzsākšana</h3>
+        <p class="text-on-surface/60 leading-relaxed">Palaižam kampaņas ar rūpīgu uzraudzību pirmajās dienās, nodrošinot stabilu uzsākšanu un ātru datu vākšanu.</p>
+      </div>
+    </div>
+    <div class="flex gap-8 items-start py-8">
+      <div class="font-headline font-black text-5xl text-primary w-20 shrink-0">05</div>
+      <div>
+        <h3 class="font-headline font-bold text-xl text-on-surface mb-2">Optimizācija</h3>
+        <p class="text-on-surface/60 leading-relaxed">Nepārtraukta kampaņu optimizācija — solījumu stratēģijas, negatīvie atslēgvārdi, A/B testēšana un iknedēļas atskaites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Case Study -->
+<section class="py-24 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="bg-surface-container-low p-12 md:p-16">
+      <p class="text-primary font-headline font-bold uppercase text-xs tracking-widest mb-6">Klientu veiksmes stāsts</p>
+      <h2 class="font-headline font-black text-4xl tracking-tighter text-on-surface mb-4">TechBaltic — E-commerce elektronika</h2>
+      <p class="text-on-surface/60 mb-12 max-w-2xl leading-relaxed">Latvijas e-komercijas uzņēmums elektronikas nozarē nāca pie mums ar zemu ROAS un augstām reklāmas izmaksām. Sešu mēnešu laikā mēs pilnībā pārveidojām viņu Google Ads stratēģiju.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="border-l-2 border-primary pl-6">
+          <div class="font-headline font-black text-5xl text-primary mb-2">+215%</div>
+          <div class="text-on-surface/60 text-sm">Konversiju pieaugums</div>
+        </div>
+        <div class="border-l-2 border-primary pl-6">
+          <div class="font-headline font-black text-5xl text-primary mb-2">6.1×</div>
+          <div class="text-on-surface/60 text-sm">ROAS (no 1.8×)</div>
+        </div>
+        <div class="border-l-2 border-primary pl-6">
+          <div class="font-headline font-black text-5xl text-primary mb-2">-38%</div>
+          <div class="text-on-surface/60 text-sm">Samazinājās CPC</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+  <h2 class="font-headline font-black text-4xl md:text-5xl tracking-tighter text-on-surface mb-16">Biežāk uzdotie jautājumi</h2>
+  <div class="space-y-0 max-w-3xl">
+    <div class="border-b border-white/5 py-8">
+      <h3 class="font-headline font-bold text-lg text-on-surface mb-4">Cik ātri var sagaidīt rezultātus?</h3>
+      <p class="text-on-surface/60 leading-relaxed">Pirmie dati parādās jau pirmajā nedēļā. Stabili rezultāti un kampaņu optimizācija notiek 4-8 nedēļu laikā. Mācību periods ir normāls — Google algoritmam nepieciešams laiks, lai optimizētu konversijas.</p>
+    </div>
+    <div class="border-b border-white/5 py-8">
+      <h3 class="font-headline font-bold text-lg text-on-surface mb-4">Kāds reklāmas budžets nepieciešams?</h3>
+      <p class="text-on-surface/60 leading-relaxed">Minimālais ieteicamais budžets ir €500/mēnesī reklāmām. Mūsu pārvaldības maksa ir atkarīga no budžeta apjoma. Strādājam ar budžetiem no €500 līdz €50 000+ mēnesī.</p>
+    </div>
+    <div class="border-b border-white/5 py-8">
+      <h3 class="font-headline font-bold text-lg text-on-surface mb-4">Vai jūs pārvaldāt esošos Google Ads kontus?</h3>
+      <p class="text-on-surface/60 leading-relaxed">Jā, veicam esošo kontu auditu un pārņemam pārvaldību. Parasti pirmo mēnesi veltām auditam un restrukturizācijai, pēc tam sākas aktīvā optimizācija.</p>
+    </div>
+    <div class="py-8">
+      <h3 class="font-headline font-bold text-lg text-on-surface mb-4">Kā notiek atskaites un komunikācija?</h3>
+      <p class="text-on-surface/60 leading-relaxed">Sniedzam iknedēļas e-pasta atskaites un reizi mēnesī detalizētu pārskatu ar visiem KPI. Jums ir piekļuve savam Google Ads kontam jebkurā laikā. Sazinamies arī e-pastā un video zvanos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="bg-primary-container p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-primary-container">Gatavi augt?</h2>
+<a href="contact.html" class="bg-on-surface text-surface py-6 px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform">Sazināties ar mums</a>
+</div>
+</section>
+
+<footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="space-y-6">
+<div class="text-xl font-black text-on-surface font-headline">ROIS</div>
+<p class="text-on-surface/40 text-sm leading-relaxed">Augstas efektivitātes digitālā mārketinga aģentūra Rīgā. Mēs ne tikai pērkam reklāmas laukumu, mēs būvējam peļņas mašīnas.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Pakalpojumi</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="google-ads.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Google Ads</a></li>
+<li><a href="meta-ads.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Meta Ads</a></li>
+<li><a href="seo.html" class="text-on-surface/40 hover:text-on-surface transition-colors">SEO Optimizācija</a></li>
+<li><a href="web-development.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Web Development</a></li>
+<li><a href="branding.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Branding</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Uzņēmums</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="about.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Par mums</a></li>
+<li><a href="case-studies.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Darbi</a></li>
+<li><a href="contact.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Kontakti</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Sociālie</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="#" class="text-on-surface/40 hover:text-on-surface transition-colors">LinkedIn</a></li>
+<li><a href="#" class="text-on-surface/40 hover:text-on-surface transition-colors">Instagram</a></li>
+<li><a href="#" class="text-on-surface/40 hover:text-on-surface transition-colors">Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<span class="text-on-surface/40 text-xs">© 2026 ROIS. Visas tiesības aizsargātas.</span>
+<div class="flex gap-8">
+<a href="privacy.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Privātuma politika</a>
+<a href="terms.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Noteikumi</a>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

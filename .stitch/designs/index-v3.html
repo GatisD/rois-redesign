@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="lv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#3a3939",
+                    "surface-container-high": "#2a2a2a",
+                    "outline-variant": "#424656",
+                    "secondary": "#b3c5ff",
+                    "on-background": "#e5e2e1",
+                    "inverse-primary": "#0054d6",
+                    "on-tertiary": "#5d1900",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface": "#131313",
+                    "on-surface": "#e5e2e1",
+                    "on-tertiary-fixed-variant": "#832600",
+                    "on-surface-variant": "#c2c6d8",
+                    "outline": "#8c90a1",
+                    "surface-tint": "#b3c5ff",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-primary-container": "#f8f7ff",
+                    "surface-variant": "#353534",
+                    "on-secondary-fixed-variant": "#284386",
+                    "primary-fixed": "#dae1ff",
+                    "background": "#131313",
+                    "tertiary": "#ffb59d",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-dim": "#131313",
+                    "on-secondary-container": "#9ab3fd",
+                    "primary": "#b3c5ff",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "on-secondary": "#0a2c6e",
+                    "inverse-on-surface": "#313030",
+                    "on-tertiary-fixed": "#390c00",
+                    "on-primary-fixed-variant": "#003fa4",
+                    "secondary-fixed": "#dae1ff",
+                    "on-primary-fixed": "#001849",
+                    "surface-container": "#201f1f",
+                    "primary-container": "#0066ff",
+                    "error": "#ffb4ab",
+                    "surface-container-highest": "#353534",
+                    "surface-container-low": "#1c1b1b",
+                    "error-container": "#93000a",
+                    "inverse-surface": "#e5e2e1",
+                    "on-error": "#690005",
+                    "on-tertiary-container": "#fff6f4",
+                    "on-secondary-fixed": "#001849",
+                    "on-primary": "#002b75",
+                    "tertiary-container": "#cc4204",
+                    "on-error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b3c5ff",
+                    "secondary-container": "#284386"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #0A0A0A; color: #E5E2E1; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .text-editorial-xl { font-size: clamp(3.5rem, 8vw, 7rem); line-height: 0.9; letter-spacing: -0.04em; }
+        .kinetic-gradient { background: linear-gradient(135deg, #0066ff 0%, #0a2c6e 100%); }
+        .ghost-border { outline: 1px solid rgba(66, 70, 86, 0.15); }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-white">
+<!-- TopAppBar Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-white uppercase font-headline">ROIS</div>
+<div class="hidden md:flex items-center space-gap-12 gap-10">
+<a class="font-['Manrope'] font-bold tracking-tight text-[#0066FF] border-b-2 border-[#0066FF] pb-1" href="#">Services</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-[#E5E2E1] hover:text-white transition-colors" href="#">Case Studies</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-[#E5E2E1] hover:text-white transition-colors" href="#">About</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-[#E5E2E1] hover:text-white transition-colors" href="#">Contact</a>
+</div>
+<button class="kinetic-gradient text-white px-6 py-3 rounded-[4px] font-bold uppercase tracking-wider text-xs hover:opacity-80 transition-all duration-300 active:scale-95">
+                Sākt sadarbību
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-48 pb-32 px-8 overflow-hidden min-h-screen flex flex-col justify-center">
+<div class="max-w-[1440px] mx-auto w-full relative z-10">
+<div class="max-w-5xl">
+<span class="text-primary-container font-black tracking-[0.2em] uppercase text-sm mb-6 block">Performance Marketingu Aģentūra</span>
+<h1 class="text-editorial-xl font-extrabold text-white mb-12">
+                        Digitālais mārketings <br/> kas nes rezultātus
+                    </h1>
+<div class="flex flex-wrap gap-6">
+<button class="kinetic-gradient text-white px-10 py-5 rounded-[4px] font-bold uppercase tracking-widest text-sm hover:opacity-90 transition-all">
+                            Sākt sadarbību
+                        </button>
+<button class="bg-surface-container-highest text-white px-10 py-5 rounded-[4px] font-bold uppercase tracking-widest text-sm ghost-border hover:bg-surface-bright transition-all">
+                            Skatīt darbus
+                        </button>
+</div>
+</div>
+</div>
+<!-- Kinetic Background Element -->
+<div class="absolute right-0 top-0 w-1/2 h-full -z-10 opacity-30">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="Abstract geometric dark blue glass structure with sharp architectural lines and dramatic lighting on dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-L5bryv4kUoC7feYFflj_yMJTBZnjjwuozQc2vRZli3vqvZzAE155NkXwqOaDA6tnKj7ted8L9LYH2PdDInHwQAfSRiJ-AQSoFhXY4GxPw3583cY6Skn6V24-KWHgkj703JaIiH6BNGT57mQ8tSCxg4whKx7uMQE7LDdYe0CFwZuP27Vv1LNBPl1OTnQuaEOJXW2UzxWN0mA-EciAGcJWP0XlwYHpkiNmETvKrREKp4aBIi2NLmd7EZDNEtxGgcHBtK5OnKMhaw"/>
+</div>
+</section>
+<!-- Metrics Section (Results) -->
+<section class="bg-surface-container-lowest py-32 px-8">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-surface-variant/10">
+<div class="bg-surface p-16 flex flex-col gap-4">
+<span class="text-primary-container text-6xl font-black tracking-tighter">312%</span>
+<p class="text-outline uppercase tracking-widest font-bold text-sm">Traffic Growth</p>
+</div>
+<div class="bg-surface p-16 flex flex-col gap-4">
+<span class="text-primary-container text-6xl font-black tracking-tighter">4.2x</span>
+<p class="text-outline uppercase tracking-widest font-bold text-sm">Average ROAS</p>
+</div>
+<div class="bg-surface p-16 flex flex-col gap-4">
+<span class="text-primary-container text-6xl font-black tracking-tighter">€2.1M</span>
+<p class="text-outline uppercase tracking-widest font-bold text-sm">Generated Revenue</p>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="bg-surface py-32 px-8">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-24">
+<h2 class="text-6xl font-black text-white tracking-tighter">Pakalpojumi <br/> Izaugsmei</h2>
+<div class="hidden md:block w-32 h-[2px] bg-primary-container mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-px bg-white/5 overflow-hidden">
+<!-- Card 1 -->
+<div class="bg-surface p-10 hover:bg-surface-container-low transition-colors group cursor-pointer border-r border-white/5 last:border-0">
+<div class="mb-12 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="ads_click">ads_click</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase tracking-tight">Google Ads</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Targetēta reklāma meklētājā, kas piesaista klientus tieši pirkuma brīdī.</p>
+<div class="mt-12 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface p-10 hover:bg-surface-container-low transition-colors group cursor-pointer border-r border-white/5 last:border-0">
+<div class="mb-12 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="hub">hub</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase tracking-tight">Meta Ads</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Facebook un Instagram kampaņas zīmola atpazīstamībai un pārdošanai.</p>
+<div class="mt-12 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface p-10 hover:bg-surface-container-low transition-colors group cursor-pointer border-r border-white/5 last:border-0">
+<div class="mb-12 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="query_stats">query_stats</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase tracking-tight">SEO</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Organiskā ranga uzlabošana Google meklēšanas rezultātos ilgtermiņa izaugsmei.</p>
+<div class="mt-12 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface p-10 hover:bg-surface-container-low transition-colors group cursor-pointer border-r border-white/5 last:border-0">
+<div class="mb-12 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="code">code</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase tracking-tight">Web Dev</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Mājaslapas un e-komercijas risinājumi, kas optimizēti konversijām.</p>
+<div class="mt-12 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface p-10 hover:bg-surface-container-low transition-colors group cursor-pointer last:border-0">
+<div class="mb-12 text-primary-container">
+<span class="material-symbols-outlined text-4xl" data-icon="brush">brush</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase tracking-tight">Branding</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Zīmola vizuālā identitāte un stratēģija mūsdienīgai tirgus pozīcijai.</p>
+<div class="mt-12 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Case Study (Asymmetric Bento Element) -->
+<section class="bg-surface-container-low py-32 px-8">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-7 bg-[#0E0E0E] relative h-[600px] overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60" data-alt="Modern office dashboard showing digital marketing analytics graphs and charts with a cool blue aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgdPK6XN8xPR8GIKPlZU0PII9WiFPXxY2MIYAyc6ipTkejk9vSZ_tyiJGItekcI3zDvoT4McLGGuzHNQigJElsmV9r9hXbb1gF3_OPiKYAcSnKWWiRAV1aJcoyXGLGGoD40yDPEFpdYYToHweo7wbqLYM-OYk0HV0WSolfwYDz9adgm9kixqz9O5gptkN3luTTgF9hBqq1BthGMg3w7vX0o9C0nsQwNzjQ3YywgObCVEwFvrj9VD-kmNiNV8Ws5cQTT13FgDh2Hw"/>
+<div class="absolute bottom-12 left-12 right-12">
+<span class="text-primary-container font-black uppercase text-xs tracking-widest mb-4 block">E-commerce Case Study</span>
+<h4 class="text-4xl font-bold text-white mb-6">Kā mēs palīdzējām lokālam zīmolam iziet Eiropas tirgū</h4>
+<button class="flex items-center gap-2 text-white font-bold uppercase text-xs tracking-widest hover:text-primary-container transition-colors">
+                            Lasīt gadījuma izpēti <span class="material-symbols-outlined text-sm">north_east</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-5 bg-surface-container-high p-16 flex flex-col justify-center">
+<h3 class="text-3xl font-black text-white mb-8">Ready to grow?</h3>
+<p class="text-on-surface-variant text-lg mb-12">Mūsu pieeja ir balstīta datos. Mēs ne tikai pērkam reklāmas, mēs būvējam pārdošanas mehānismus.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 bg-primary-container"></div>
+<span class="text-white font-medium">Bezmaksas audita piedāvājums</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 bg-primary-container"></div>
+<span class="text-white font-medium">Fiksēta cena bez slēptām izmaksām</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-2 bg-primary-container"></div>
+<span class="text-white font-medium">Reāllaika atskaišu sistēma</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full py-20 px-8 border-t border-white/5 bg-[#0E0E0E]">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="text-3xl font-black tracking-tighter text-white uppercase mb-8 font-headline">ROIS</div>
+<p class="text-[#E5E2E1]/60 text-sm leading-relaxed max-w-xs">Mēs transformējam zīmolus digitālajā laikmetā, izmantojot stratēģiju, dizainu un tehnoloģijas.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-white font-bold uppercase tracking-widest text-xs mb-4">Pakalpojumi</h5>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">SEO</a>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">PPC</a>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">Social Media</a>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">Content Strategy</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-white font-bold uppercase tracking-widest text-xs mb-4">Kompānija</h5>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">Our Story</a>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">Careers</a>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">Privacy Policy</a>
+<a class="text-[#E5E2E1]/60 hover:text-[#0066FF] transition-colors duration-200 text-sm" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-white font-bold uppercase tracking-widest text-xs mb-4">Kontakti</h5>
+<p class="text-[#E5E2E1]/60 text-sm">info@rois.agency</p>
+<p class="text-[#E5E2E1]/60 text-sm">+371 2000 0000</p>
+<p class="text-[#E5E2E1]/60 text-sm">Rīga, Latvija</p>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-20 pt-8 border-t border-white/5">
+<p class="text-[#E5E2E1]/40 text-xs tracking-wide">© 2024 ROIS Digital Marketing Agency. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

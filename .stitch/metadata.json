@@ -1,0 +1,61 @@
+{
+  "name": "projects/7599019386160006205",
+  "projectId": "7599019386160006205",
+  "title": "ROIS Digital Marketing Agency",
+  "visibility": "PRIVATE",
+  "createTime": "2026-04-14T17:38:08.698753Z",
+  "updateTime": "2026-04-14T17:43:55.374902Z",
+  "projectType": "PROJECT_DESIGN",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "MANROPE",
+    "headlineFont": "MANROPE",
+    "labelFont": "INTER",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#0066FF",
+    "spacingScale": 3
+  },
+  "screens": {
+    "index": {
+      "id": "3fca19075f574c0eb01a6394e95c49b2",
+      "sourceScreen": "projects/7599019386160006205/screens/3fca19075f574c0eb01a6394e95c49b2",
+      "x": 1024,
+      "y": 0,
+      "width": 2560,
+      "height": 8504,
+      "title": "ROIS | Digitālais Mārketings"
+    },
+    "index-v2": {
+      "id": "325012213a6d4b9ea10978436369d52d",
+      "sourceScreen": "projects/7599019386160006205/screens/325012213a6d4b9ea10978436369d52d",
+      "x": 1024,
+      "y": 4508,
+      "width": 2560,
+      "height": 5170,
+      "title": "ROIS | Digitālais Mārketings (v2)"
+    },
+    "index-v3": {
+      "id": "2419d84338484a13b7b86f9564736ffe",
+      "sourceScreen": "projects/7599019386160006205/screens/2419d84338484a13b7b86f9564736ffe",
+      "x": 1024,
+      "y": 7349,
+      "width": 2560,
+      "height": 7366,
+      "title": "ROIS | Home (v3)"
+    },
+    "index-v4": {
+      "id": "fbef2fb25b5841388b0156665004896d",
+      "sourceScreen": "projects/7599019386160006205/screens/fbef2fb25b5841388b0156665004896d",
+      "x": 1024,
+      "y": 11288,
+      "width": 2560,
+      "height": 8318,
+      "title": "ROIS | Digital Agency (v4)"
+    }
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}

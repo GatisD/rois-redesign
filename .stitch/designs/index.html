@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="lv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#c8c6c5",
+                    "on-primary": "#002b75",
+                    "on-primary-fixed-variant": "#003fa4",
+                    "tertiary": "#ffb59d",
+                    "secondary-fixed": "#e5e2e1",
+                    "outline-variant": "#424656",
+                    "error-container": "#93000a",
+                    "primary": "#b3c5ff",
+                    "inverse-primary": "#0054d6",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-container-low": "#1c1b1b",
+                    "on-surface": "#e5e2e1",
+                    "outline": "#8c90a1",
+                    "on-secondary": "#313030",
+                    "surface-bright": "#3a3939",
+                    "on-primary-container": "#f8f7ff",
+                    "on-tertiary-fixed-variant": "#832600",
+                    "primary-container": "#0066ff",
+                    "on-tertiary-container": "#fff6f4",
+                    "on-secondary-container": "#bab8b7",
+                    "surface-container": "#201f1f",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "primary-fixed": "#dae1ff",
+                    "surface-dim": "#131313",
+                    "on-tertiary": "#5d1900",
+                    "on-tertiary-fixed": "#390c00",
+                    "on-background": "#e5e2e1",
+                    "on-secondary-fixed-variant": "#474646",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface": "#131313",
+                    "inverse-surface": "#e5e2e1",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "tertiary-container": "#cc4204",
+                    "surface-container-highest": "#353534",
+                    "surface-container-high": "#2a2a2a",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "on-surface-variant": "#c2c6d8",
+                    "on-primary-fixed": "#001849",
+                    "background": "#131313",
+                    "secondary-container": "#4a4949",
+                    "surface-tint": "#b3c5ff",
+                    "inverse-on-surface": "#313030",
+                    "surface-variant": "#353534"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .precision-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 40px 60px -15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Header Section -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<div class="text-2xl font-black tracking-tighter text-on-surface">ROIS</div>
+<div class="hidden md:flex gap-10">
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-blue-600 border-b-2 border-blue-600 transition-transform active:scale-95" href="#">Home</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-blue-500 transition-colors duration-200" href="#">Services</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-blue-500 transition-colors duration-200" href="#">Case Studies</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-blue-500 transition-colors duration-200" href="#">About</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-blue-500 transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-on-surface/60 cursor-pointer hover:text-on-surface transition-colors">dark_mode</span>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest active:scale-95 transition-transform">
+                    Sākt sadarbību
+                </button>
+</div>
+</nav>
+</header>
+<main class="precision-grid pt-24">
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center px-8 max-w-7xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12 items-center w-full">
+<div class="space-y-8">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight">
+                        Digitālais mārketings / <span class="text-primary-container">kas nes rezultātus.</span>
+</h1>
+<p class="text-on-surface/60 text-lg md:text-xl max-w-lg leading-relaxed">
+                        Google Ads, Meta Ads, SEO, un web izstrāde Latvijas uzņēmumiem, kas vēlas dominēt savā nozarē.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary-container text-on-primary-container px-10 py-5 font-headline font-bold text-sm uppercase tracking-widest active:scale-95 transition-transform">
+                            Sākt sadarbību
+                        </button>
+<button class="border border-primary-container/20 hover:border-primary-container/60 px-10 py-5 font-headline font-bold text-sm uppercase tracking-widest transition-all">
+                            Skatīt darbus
+                        </button>
+</div>
+</div>
+<div class="hidden md:flex justify-end relative">
+<div class="bg-surface-container-low p-12 aspect-square flex flex-col justify-center items-end border-l border-primary-container/10">
+<span class="font-headline text-[10rem] font-black text-primary leading-none tracking-tighter opacity-90">4.2<span class="text-3xl font-bold align-top mt-8">X</span></span>
+<span class="font-headline text-2xl font-bold uppercase tracking-[0.2em] text-on-surface/40">Average ROAS</span>
+</div>
+<!-- Decorative architectural element -->
+<div class="absolute -bottom-8 -right-8 w-32 h-32 bg-primary-container opacity-5"></div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="mb-20">
+<span class="font-label text-primary uppercase tracking-[0.3em] text-xs font-bold">Mūsu Kompetence</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold mt-4">Pakalpojumi Izaugsmei</h2>
+</div>
+<div class="flex flex-col gap-px bg-white/5">
+<!-- Service Item -->
+<div class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
+<div class="md:col-span-1">
+<span class="material-symbols-outlined text-primary-container text-4xl">ads_click</span>
+</div>
+<div class="md:col-span-3">
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Google Ads</h3>
+</div>
+<div class="md:col-span-6">
+<p class="text-on-surface/60 font-body">Precīza reklāma meklētājservisos tieši tad, kad klients meklē jūsu produktu.</p>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span>
+</div>
+</div>
+<!-- Service Item -->
+<div class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
+<div class="md:col-span-1">
+<span class="material-symbols-outlined text-primary-container text-4xl">campaign</span>
+</div>
+<div class="md:col-span-3">
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Meta Ads</h3>
+</div>
+<div class="md:col-span-6">
+<p class="text-on-surface/60 font-body">Piesaistošas kampaņas Facebook un Instagram, kas pārvērš skatījumus pirkumos.</p>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span>
+</div>
+</div>
+<!-- Service Item -->
+<div class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
+<div class="md:col-span-1">
+<span class="material-symbols-outlined text-primary-container text-4xl">search_insights</span>
+</div>
+<div class="md:col-span-3">
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">SEO</h3>
+</div>
+<div class="md:col-span-6">
+<p class="text-on-surface/60 font-body">Ilgtermiņa atpazīstamība un organiska plūsma meklēšanas rezultātos.</p>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span>
+</div>
+</div>
+<!-- Service Item -->
+<div class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
+<div class="md:col-span-1">
+<span class="material-symbols-outlined text-primary-container text-4xl">code</span>
+</div>
+<div class="md:col-span-3">
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Web Development</h3>
+</div>
+<div class="md:col-span-6">
+<p class="text-on-surface/60 font-body">Ātras, konvertējošas un tehniski perfektas mājaslapas jūsu biznesam.</p>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span>
+</div>
+</div>
+<!-- Service Item -->
+<div class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
+<div class="md:col-span-1">
+<span class="material-symbols-outlined text-primary-container text-4xl">brush</span>
+</div>
+<div class="md:col-span-3">
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Branding</h3>
+</div>
+<div class="md:col-span-6">
+<p class="text-on-surface/60 font-body">Vizuālā identitāte, kas izceļas un rada uzticību jūsu mērķauditorijā.</p>
+</div>
+<div class="md:col-span-2 text-right">
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Results Section -->
+<section class="bg-surface-container-lowest py-32">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-px bg-white/5">
+<div class="bg-surface-container-lowest p-16 space-y-4">
+<div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">312%</div>
+<div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Organic traffic growth</div>
+</div>
+<div class="bg-surface-container-lowest p-16 space-y-4">
+<div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">4.2x</div>
+<div class="font-label text-xs uppercase tracking-widest text-on-surface/40">ROAS in 60 days</div>
+</div>
+<div class="bg-surface-container-lowest p-16 space-y-4">
+<div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">€2.1M</div>
+<div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Revenue generated</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-4xl font-bold tracking-tight uppercase">Ko saka mūsu klienti</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-container-high p-10 space-y-6 editorial-shadow border-t-4 border-primary-container">
+<div class="flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body italic text-lg leading-relaxed">"ROIS komanda pilnībā mainīja mūsu izpratni par digitālo mārketingu. Rezultāti pārsniedza visas cerības jau pirmajos mēnešos."</p>
+<div>
+<div class="font-headline font-bold text-on-surface uppercase text-sm">Jānis Bērziņš</div>
+<div class="text-xs text-on-surface/40 font-label">CEO, TechBaltic</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-10 space-y-6 editorial-shadow border-t-4 border-primary-container">
+<div class="flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body italic text-lg leading-relaxed">"Profesionāla pieeja un padziļināta analītika. Beidzot mēs redzam skaidru atdevi no katra investētā eiro."</p>
+<div>
+<div class="font-headline font-bold text-on-surface uppercase text-sm">Anete Kalniņa</div>
+<div class="text-xs text-on-surface/40 font-label">Marketing Lead, NordicDesign</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-10 space-y-6 editorial-shadow border-t-4 border-primary-container">
+<div class="flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body italic text-lg leading-relaxed">"SEO stratēģija, kas tiešām strādā. Esam pirmajās pozīcijās mūsu svarīgākajiem atslēgvārdiem mazāk nekā pusgada laikā."</p>
+<div>
+<div class="font-headline font-bold text-on-surface uppercase text-sm">Mārtiņš Ozols</div>
+<div class="text-xs text-on-surface/40 font-label">Founder, EcoStyle</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<div class="bg-primary-container p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-primary-container">Gatavi augt?</h2>
+<button class="bg-on-surface text-surface py-6 px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform active:scale-95">
+                    Sazināties ar mums
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="space-y-6">
+<div class="text-xl font-black text-on-surface">ROIS</div>
+<p class="text-on-surface/40 text-sm leading-relaxed">
+                    Augstas efektivitātes digitālā mārketinga aģentūra Rīgā. Mēs ne tikai pērkam reklāmas laukumu, mēs būvējam peļņas mašīnas.
+                </p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Services</h4>
+<ul class="space-y-4 font-inter text-sm tracking-wide">
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Google Ads</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Meta Ads</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">SEO Optimizācija</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Web Development</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Company</h4>
+<ul class="space-y-4 font-inter text-sm tracking-wide">
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">About Us</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Case Studies</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Careers</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Social</h4>
+<ul class="space-y-4 font-inter text-sm tracking-wide">
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Instagram</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors duration-200 focus:underline decoration-blue-600" href="#">Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<span class="text-on-surface/40 text-xs font-inter tracking-wide">© ROIS. Visas tiesības aizsargātas.</span>
+<div class="flex gap-8">
+<a class="text-on-surface/40 hover:text-on-surface text-xs transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface/40 hover:text-on-surface text-xs transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
