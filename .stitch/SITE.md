@@ -65,7 +65,8 @@
 
 ### 9. Case Study Detail (`/darbi/[slug]`) — [x] complete
 - `case-study-techbaltic.html` — TechBaltic: Google Ads, ROAS 1.8× → 6.1×
-- Challenge / Before metrics / 3-part solution / Results grid / 6-month timeline / Testimonial / Next case study strip
+- `case-study-nordicdesign.html` — NordicDesign: Meta Ads, +180% pārdošana ar Reels, 4 mēneši — [x] complete
+- Challenge / Before metrics / 3-part solution / Results grid / Timeline / Testimonial / Next case study strip
 
 ### 10. About (`/par-mums`) — [x] complete — `about.html`
 - Agency story / mission

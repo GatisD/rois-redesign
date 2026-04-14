@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="dark" lang="lv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROIS | Mūsu Klienti</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary": "#c8c6c5","on-primary": "#2a1a0a","on-primary-fixed-variant": "#6b4f2e",
+        "tertiary": "#ffb59d","secondary-fixed": "#e5e2e1","outline-variant": "#424656",
+        "error-container": "#93000a","primary": "#d4b898","inverse-primary": "#8a6e4a",
+        "on-secondary-fixed": "#1c1b1b","surface-container-low": "#1c1b1b",
+        "on-surface": "#e5e2e1","outline": "#8c90a1","on-secondary": "#313030",
+        "surface-bright": "#3a3939","on-primary-container": "#faf5ef",
+        "primary-container": "#b59569","surface-container": "#201f1f",
+        "primary-fixed": "#f0e0cc","surface-dim": "#131313","on-background": "#e5e2e1",
+        "surface-container-lowest": "#0e0e0e","surface": "#131313",
+        "inverse-surface": "#e5e2e1","primary-fixed-dim": "#d4b898",
+        "surface-container-highest": "#353534","surface-container-high": "#2a2a2a",
+        "error": "#ffb4ab","on-error": "#690005","on-surface-variant": "#c2c6d8",
+        "background": "#131313","secondary-container": "#4a4949",
+        "surface-tint": "#d4b898","inverse-on-surface": "#313030","surface-variant": "#353534"
+      },
+      "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+      "fontFamily": {"headline": ["Manrope"],"body": ["Inter"],"label": ["Inter"]}
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.precision-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px); }
+.client-card { transition: all 0.2s cubic-bezier(0.2,1,0.3,1); }
+.client-card:hover { transform: translateY(-4px); }
+.client-card img { transition: opacity 0.3s ease; }
+.filter-btn { transition: all 0.2s ease; }
+.filter-btn.active { background: #b59569; color: #faf5ef; }
+@keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+.fade-in { animation: fadeIn 0.35s cubic-bezier(0.2,1,0.3,1) forwards; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
+<div class="hidden md:flex gap-10">
+<a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
+<a href="services.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Pakalpojumi</a>
+<a href="clients.html" class="font-headline tracking-tight font-bold uppercase text-xs text-primary-container border-b-2 border-primary-container">Klienti</a>
+<a href="case-studies.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Darbi</a>
+<a href="about.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Par mums</a>
+<a href="contact.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Kontakti</a>
+</div>
+<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+</nav>
+</header>
+
+<main class="pt-24 overflow-x-hidden">
+
+  <!-- Hero -->
+  <section class="precision-grid py-24 w-full">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="max-w-3xl space-y-6">
+        <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">Mūsu portfolio</span>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight">
+          Mūsu <span class="text-primary-container">klienti</span>
+        </h1>
+        <p class="text-on-surface/60 text-lg leading-relaxed max-w-xl">
+          Mūsu digitālā mārketinga aģentūras klienti pārstāv dažādas nozares — no būvniecības un nekustamajiem īpašumiem līdz e-komercijai un auto tirdzniecībai.
+        </p>
+        <div class="flex gap-8 pt-4">
+          <div>
+            <div class="font-headline text-3xl font-black text-primary">48+</div>
+            <div class="font-label text-xs uppercase tracking-widest text-on-surface/40 mt-1">Klienti</div>
+          </div>
+          <div class="w-px bg-white/10"></div>
+          <div>
+            <div class="font-headline text-3xl font-black text-primary">6</div>
+            <div class="font-label text-xs uppercase tracking-widest text-on-surface/40 mt-1">Nozares</div>
+          </div>
+          <div class="w-px bg-white/10"></div>
+          <div>
+            <div class="font-headline text-3xl font-black text-primary">5+</div>
+            <div class="font-label text-xs uppercase tracking-widest text-on-surface/40 mt-1">Gadi tirgū</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter + Grid -->
+  <section class="py-16 w-full">
+    <div class="max-w-7xl mx-auto px-8">
+
+      <!-- Filter tabs -->
+      <div id="filter-container" class="flex flex-wrap gap-3 mb-12">
+        <button class="filter-btn active font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-primary-container/30 hover:border-primary-container" data-filter="all">Visi</button>
+        <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="ads">Reklāma (Ads)</button>
+        <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="content">Saturs (TikTok)</button>
+        <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="web">Mājaslapas</button>
+        <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="branding">Brendings</button>
+        <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="other">Citi / Partneri</button>
+      </div>
+
+      <!-- Client grid -->
+      <div id="client-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-white/5">
+      </div>
+
+      <!-- Empty state -->
+      <div id="empty-state" class="hidden py-24 text-center">
+        <span class="material-symbols-outlined text-on-surface/20 text-6xl">search_off</span>
+        <p class="text-on-surface/40 mt-4 font-label">Nav atrasts neviens klients šajā kategorijā.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-32 w-full">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="bg-primary-container p-16 md:p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+        <div class="space-y-3">
+          <h2 class="font-headline text-4xl md:text-6xl font-black tracking-tighter text-on-primary-container">Kļūsti par nākamo?</h2>
+          <p class="text-on-primary-container/70 font-body">Pievienojies 48+ uzņēmumiem, kas uzticēja mums savu izaugsmi.</p>
+        </div>
+        <a href="contact.html" class="flex-shrink-0 bg-on-surface text-surface py-5 px-10 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform">Piesakies konsultācijai</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="space-y-6">
+<div class="text-xl font-black text-on-surface font-headline">ROIS</div>
+<p class="text-on-surface/40 text-sm leading-relaxed">Pirmā ELITES digitālā mārketinga aģentūra Latvijā. Kopā sasniegsim vairāk.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Pakalpojumi</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="google-ads.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Google Reklāma</a></li>
+<li><a href="meta-ads.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Meta Reklāma</a></li>
+<li><a href="seo.html" class="text-on-surface/40 hover:text-on-surface transition-colors">SEO Optimizācija</a></li>
+<li><a href="web-development.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Mājaslapu izstrāde</a></li>
+<li><a href="branding.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Grafiskais Dizains</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Uzņēmums</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="about.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Par mums</a></li>
+<li><a href="clients.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Mūsu klienti</a></li>
+<li><a href="case-studies.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Darbi</a></li>
+<li><a href="contact.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Kontakti</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Kontakti</h4>
+<ul class="space-y-4 text-sm text-on-surface/40">
+<li><a href="tel:+37127163540" class="hover:text-on-surface transition-colors">+371 27 163 540</a></li>
+<li><a href="mailto:info@rois.lv" class="hover:text-on-surface transition-colors">info@rois.lv</a></li>
+<li>Lāčplēša iela 27, Rīga</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<span class="text-on-surface/40 text-xs">© 2026 ROIS. Visas tiesības aizsargātas.</span>
+<div class="flex gap-8">
+<a href="privacy.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Privātuma politika</a>
+<a href="terms.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Noteikumi</a>
+</div>
+</div>
+</footer>
+
+<script>
+const clientsData = [
+  { name: "Būvniecības ABC", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Buvniecibas-ABC.jpg" },
+  { name: "Siguldas Kokmateriāli", service: "Meta Ads, Google Ads, Youtube Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Siguldas-Kokmateriali.jpg" },
+  { name: "Mustang Apsardze", service: "Meta Ads, Google Ads, Satura veidošana", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Mustang-Apsardze.jpg" },
+  { name: "Estire", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Estire.jpg" },
+  { name: "Hepsor", service: "Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Hepsor.jpg" },
+  { name: "Tavas Durvis", service: "Meta Ads, Google Ads, TikTok Saturs", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/TavasDurvis.jpg" },
+  { name: "Dīvāni un Dīvāni", service: "TikTok Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Divani-un-Divani.jpg" },
+  { name: "Mc2 Decorum", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2026/03/Mc2-Decorum-logo-500x246.png" },
+  { name: "Amserv", service: "Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Amserv.jpg" },
+  { name: "LaLuna", service: "Meta Ads, Satura veidošana", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Laluna.jpg" },
+  { name: "Berga Nami", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Berga-Nami.jpg" },
+  { name: "ARM Metāls", service: "Google Ads, Meta Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/ArmMetals.jpg" },
+  { name: "Bazara 0", service: "Meta Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Bazara-Nulle.jpg" },
+  { name: "110m2", service: "Meta Ads, Google Ads, Mājaslapas izstrāde", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/110m2.jpg" },
+  { name: "A-Player", service: "Meta Ads, Satura veidošana", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Aplayer.jpg" },
+  { name: "LAFI Serviss", service: "Video saturs, TikTok Ads, Meta Ads", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/LAFI-Serviss.jpg" },
+  { name: "Lucky Punch", service: "Mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Lucky-Punch.jpg" },
+  { name: "ProfDurys", service: "Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/ProfDuryus.jpg" },
+  { name: "SinuUksed", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/SinuUksed.jpg" },
+  { name: "Si House", service: "Meta Ads, Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Si-House.jpg" },
+  { name: "PSL", service: "Meta Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/PSL.jpg" },
+  { name: "Piedzīvojumu Parks", service: "Meta Ads, Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Piedzivojumu-Parks.jpg" },
+  { name: "Vinylworks", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Vinylworks.jpg" },
+  { name: "RSA Workshop", service: "TikTok saturs, Youtube Ads", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/RSA-Workshop.jpg" },
+  { name: "GF Koledža", service: "Meta Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/GF-Koledza.jpg" },
+  { name: "Lauvas Zobs", service: "Mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Lauvas-Zobs.jpg" },
+  { name: "Improvement", service: "Mājaslapas tehniskais atbalsts", category: "other", file: "https://rois.lv/wp-content/uploads/2025/11/Improvement-SIA.jpg" },
+  { name: "Cafeteria", service: "Mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Cafeteria.jpg" },
+  { name: "Ceļ Būve", service: "Meta Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Cel-Buve.jpg" },
+  { name: "Dr. Kadišs", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Dr.-Kadiss.jpg" },
+  { name: "Meimelin", service: "Google Ads, Meta Ads, TikTok saturs", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Meimelin.jpg" },
+  { name: "WDM", service: "Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/WDM.jpg" },
+  { name: "PARKi", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Parki.lv_.jpg" },
+  { name: "Valis Stomatoloģija", service: "Mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Valis.jpg" },
+  { name: "Santa Zvejniece", service: "Pilnais brendings", category: "branding", file: "https://rois.lv/wp-content/uploads/2025/11/Audit.jpg" },
+  { name: "Box Latvia", service: "Brendings un mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/BoxLatvia.jpg" },
+  { name: "Darba Apģērbi", service: "Mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Darbaapgerbi.jpg" },
+  { name: "DarbaGuru", service: "Logo un mazais brandbook", category: "branding", file: "https://rois.lv/wp-content/uploads/2025/11/DarbaGuru.jpg" },
+  { name: "MLM Cargo", service: "Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/MLM.jpg" },
+  { name: "Olive", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2025/11/Olive.jpg" },
+  { name: "Fakro", service: "TikTok satura veidošana", category: "content", file: "https://rois.lv/wp-content/uploads/2026/04/Fakro-logo-white.webp" },
+  { name: "Forevolt", service: "Mājaslapas izstrāde", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Forevolt.jpg" },
+  { name: "Green Bay", service: "E-komercija", category: "web", file: "https://rois.lv/wp-content/uploads/2025/11/Greenbay.jpg" },
+  { name: "Viesu nams Vētras", service: "Tūrisms", category: "other", file: "https://rois.lv/wp-content/uploads/2025/11/Vetras.jpg" },
+  { name: "DTF Factory", service: "Drukas pakalpojumi", category: "other", file: "https://rois.lv/wp-content/uploads/2025/11/DTF.jpg" },
+  { name: "Obsidian", service: "Logo un vizītkaršu izstrāde", category: "branding", file: "https://rois.lv/wp-content/uploads/2025/11/Obisdian.jpg" },
+  { name: "Varloz", service: "Logo un vizītkaršu izstrāde", category: "branding", file: "https://rois.lv/wp-content/uploads/2025/11/Varloz.jpg" },
+  { name: "Kamīndizains", service: "Google Ads", category: "ads", file: "https://rois.lv/wp-content/uploads/2025/11/Kamindizains.jpg" }
+];
+
+const categoryLabels = { ads: "Reklāma", content: "Saturs", web: "Mājaslapas", branding: "Brendings", other: "Partneris" };
+const categoryColors = { ads: "text-primary-container bg-primary-container/10", content: "text-blue-400 bg-blue-400/10", web: "text-emerald-400 bg-emerald-400/10", branding: "text-purple-400 bg-purple-400/10", other: "text-on-surface/50 bg-white/5" };
+
+let currentFilter = "all";
+
+function renderGrid(filter) {
+  const grid = document.getElementById("client-grid");
+  const empty = document.getElementById("empty-state");
+  const filtered = filter === "all" ? clientsData : clientsData.filter(c => c.category === filter);
+
+  if (filtered.length === 0) {
+    grid.innerHTML = "";
+    empty.classList.remove("hidden");
+    return;
+  }
+  empty.classList.add("hidden");
+
+  grid.innerHTML = filtered.map((client, i) => {
+    const catLabel = categoryLabels[client.category] || client.category;
+    const catColor = categoryColors[client.category] || categoryColors.other;
+    return `
+      <div class="client-card bg-surface-container-lowest group relative overflow-hidden fade-in" style="animation-delay:${i * 30}ms">
+        <div class="aspect-[4/3] flex items-center justify-center p-8 bg-surface-container-lowest group-hover:bg-surface-container-low transition-colors duration-300">
+          <img
+            src="${client.file}"
+            alt="${client.name}"
+            class="max-h-16 max-w-full object-contain filter brightness-75 group-hover:brightness-100 transition-all duration-300"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+          />
+          <div class="hidden items-center justify-center w-full h-full">
+            <span class="font-headline font-black text-xl text-on-surface/30 text-center tracking-tight">${client.name}</span>
+          </div>
+        </div>
+        <div class="px-5 py-4 border-t border-white/5 space-y-1.5">
+          <div class="font-headline font-bold text-sm text-on-surface tracking-tight">${client.name}</div>
+          <div class="font-label text-xs text-on-surface/40 leading-relaxed">${client.service}</div>
+          <span class="inline-block font-label text-xs font-bold uppercase tracking-widest px-2 py-0.5 mt-1 ${catColor}">${catLabel}</span>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+// Filter buttons
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach(b => {
+      b.classList.remove("active");
+      b.classList.add("text-on-surface/60");
+    });
+    btn.classList.add("active");
+    btn.classList.remove("text-on-surface/60");
+    currentFilter = btn.dataset.filter;
+    renderGrid(currentFilter);
+  });
+});
+
+// Initial render
+renderGrid("all");
+</script>
+
+</body>
+</html>

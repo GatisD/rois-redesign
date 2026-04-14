@@ -1,24 +1,24 @@
 ---
-page: case-study-nordicdesign
+page: case-study-ecostyle
 ---
-Second case study detail page for ROIS — NordicDesign: Meta Ads success story.
+Third case study detail page for ROIS — EcoStyle: SEO success story.
 
 **DESIGN SYSTEM (REQUIRED):**
-Same dark design system as all other pages: background #131313, cards #1c1b1b, accent #0066FF. Manrope (headings), Inter (body). Sharp corners. Exact same head section, header (active nav: Darbi), and footer as case-study-techbaltic.html.
+Same dark design system as all other pages: background #131313, cards #1c1b1b, accent #b59569. Manrope (headings), Inter (body). Sharp corners. Exact same head section, header (active nav: Darbi), and footer as case-study-nordicdesign.html.
 
-**Page URL:** `case-study-nordicdesign.html` (save to both `site/public/` and `.stitch/designs/`)
+**Page URL:** `case-study-ecostyle.html` (save to both `site/public/` and `.stitch/designs/`)
 
 **Page Structure:**
-Same structure as case-study-techbaltic.html but with NordicDesign content:
+Same structure as case-study-nordicdesign.html but with EcoStyle content:
 
 1. Back link → case-studies.html
-2. Hero: Service tag "Meta Ads". H1 "NordicDesign: +180% pārdošana ar Reels videoreklāmām". Industry: "Fashion · E-commerce". Stats: +180% pārdošana (hero), CPM -45%, CTR 4.2%, 4 mēneši.
-3. Challenge: Low organic reach, no video content strategy, CPM too high, no retargeting funnel. Before metrics: ROAS 1.4×, CPM €8.20, CTR 0.9%, Reels kampaņas nav.
-4. Solution: 3 cards — 1. Reels videoreklāmu stratēģija. 2. Full-funnel retargeting arhitektūra. 3. Radošā A/B testēšana.
-5. Results: +180% pārdošana, ROAS 3.8×, CPM -45% (€4.51), CTR 4.2%, +320% Reels sasniedzamība, 4.1× ROI.
-6. Timeline: 4 months (Audits → Radošais → Uzsākšana → Skalēšana)
-7. Testimonial: Quote from "Elīna Marta, CMO, NordicDesign"
-8. Next case study → case-study-ecosyle.html, service: SEO, title: "EcoStyle: +312% organiskā plūsma 8 mēnešos"
+2. Hero: Service tag "SEO". H1 "EcoStyle: +312% organiskā plūsma 8 mēnešos". Industry: "Lifestyle · E-commerce". Stats: +312% organiskā plūsma (hero), #1 pozīcija 47 atslēgvārdiem, DR 28→52, 8 mēneši.
+3. Challenge: No technical SEO foundation, thin content, zero backlinks, slow site (Core Web Vitals fail). Before metrics: Organiskā plūsma 820/mēn, DR 28, atslēgvārdi top 10: 3, Core Web Vitals: Fail.
+4. Solution: 3 cards — 1. Tehniskā SEO pamatu ielikšana. 2. Satura stratēģija un rakstīšana. 3. Saišu veidošana (link building).
+5. Results: +312% organiskā plūsma (820 → 3,380/mēn), #1 pozīcija 47 atslēgvārdiem, DR 28→52, top 10 atslēgvārdi 3→89, Core Web Vitals: Pass, 6.2× ROI.
+6. Timeline: 8 months (Audits → Tehniskais → Saturs → Saites → Skalēšana)
+7. Testimonial: Quote from "Mārtiņš Ozoliņš, CEO, EcoStyle"
+8. Next case study → case-study-balticsaas.html, service: Google Ads, title: "BalticSaaS: +420% lead apjoms B2B Google Ads"
 9. CTA Banner + Footer
 
-After building, update SITE.md to add NordicDesign case study as [x] complete, and set next-prompt.md to the EcoStyle SEO case study.
+After building, update SITE.md to add EcoStyle case study as [x] complete, and set next-prompt.md to the BalticSaaS Google Ads case study.
