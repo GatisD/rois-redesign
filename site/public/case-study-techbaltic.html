@@ -46,7 +46,7 @@ tailwind.config = {
 
 <!-- Header -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
-<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
 <a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
 <div class="hidden md:flex gap-10">
 <a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
@@ -55,14 +55,29 @@ tailwind.config = {
 <a href="about.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Par mums</a>
 <a href="contact.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Kontakti</a>
 </div>
-<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors" aria-label="Atvērt izvēlni"><span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span></button>
 </nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 py-6 space-y-1">
+<a href="index.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Sākums</a>
+<a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
+<a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
+<a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
+<a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
+<div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
+</div>
+</div>
 </header>
 
-<main class="pt-24">
+<main class="pt-16 md:pt-24">
 
   <!-- Back link -->
-  <div class="max-w-7xl mx-auto px-8 pt-10">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 pt-6 md:pt-10">
     <a href="case-studies.html" class="inline-flex items-center gap-2 text-primary-container font-label text-sm font-bold uppercase tracking-widest hover:opacity-70 transition-opacity">
       <span class="material-symbols-outlined text-base">arrow_back</span>
       Atpakaļ uz darbiem
@@ -70,8 +85,8 @@ tailwind.config = {
   </div>
 
   <!-- Hero -->
-  <section class="precision-grid py-24 px-8">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+  <section class="precision-grid py-12 md:py-24 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-16 items-center">
       <div class="space-y-6">
         <div class="flex items-center gap-4">
           <span class="font-label text-xs font-bold uppercase tracking-widest text-primary-container bg-primary-container/10 px-3 py-1">Google Ads</span>
@@ -84,9 +99,9 @@ tailwind.config = {
           TechBaltic ir vadošais elektronikas e-komercijas uzņēmums Latvijā. Sadarbībā ar ROIS komandu viņi pilnībā pārveidoja savu Google Ads stratēģiju un sasniedzot rekordu ROAS tikai sešos mēnešos.
         </p>
       </div>
-      <div class="bg-surface-container-lowest p-12 space-y-8">
+      <div class="bg-surface-container-lowest p-6 md:p-12 space-y-6 md:space-y-8">
         <div class="space-y-2">
-          <div class="font-headline text-8xl font-black text-primary tracking-tighter leading-none">6.1<span class="text-3xl align-top mt-4 inline-block">×</span></div>
+          <div class="font-headline text-6xl md:text-8xl font-black text-primary tracking-tighter leading-none">6.1<span class="text-3xl align-top mt-4 inline-block">×</span></div>
           <div class="font-label text-xs uppercase tracking-[0.3em] text-on-surface/40">ROAS — Galvenais rezultāts</div>
         </div>
         <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/5">
@@ -108,8 +123,8 @@ tailwind.config = {
   </section>
 
   <!-- Challenge -->
-  <section class="bg-surface-container-lowest py-32">
-    <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-start">
+  <section class="bg-surface-container-lowest py-16 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 grid md:grid-cols-2 gap-8 md:gap-16 items-start">
       <div class="space-y-6">
         <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">01 — Izaicinājums</span>
         <h2 class="font-headline text-4xl font-bold tracking-tight">Izaicinājums</h2>
@@ -123,7 +138,7 @@ tailwind.config = {
           Galvenās problēmas: izšķērdēts budžets uz neatbilstošiem vaicājumiem, nav Performance Max kampaņu, produktu plūsma bez optimizācijas, un atskaites bez pārskatatbildības.
         </p>
       </div>
-      <div class="bg-surface-container-low p-10 space-y-6">
+      <div class="bg-surface-container-low p-6 md:p-10 space-y-6">
         <h3 class="font-headline text-lg font-bold uppercase tracking-tight text-on-surface/60">Pirms sadarbības</h3>
         <div class="space-y-5">
           <div class="flex justify-between items-center py-4 border-b border-white/5">
@@ -152,7 +167,7 @@ tailwind.config = {
   </section>
 
   <!-- Solution -->
-  <section class="py-32 px-8">
+  <section class="py-16 md:py-32 px-4 md:px-8">
     <div class="max-w-7xl mx-auto space-y-16">
       <div>
         <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">02 — Risinājums</span>
@@ -160,7 +175,7 @@ tailwind.config = {
         <p class="text-on-surface/60 mt-4 max-w-2xl leading-relaxed">Trīs posmu stratēģija, kas pilnībā pārveidoja TechBaltic digitālo reklāmas infrastruktūru.</p>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-surface-container-low p-10 space-y-6">
+        <div class="bg-surface-container-low p-6 md:p-10 space-y-6">
           <div class="font-headline text-5xl font-black text-primary-container/20 tracking-tighter">01</div>
           <h3 class="font-headline text-xl font-bold uppercase tracking-tight">Kampaņu restrukturizācija</h3>
           <p class="text-on-surface/60 leading-relaxed">Pilnīga konta pārrakstīšana no nulles. Izveidojām skaidru kampaņu hierarhiju pēc produktu kategorijām, noteica precīzus negatīvos atslēgvārdus un optimizēja Quality Score visā kontā.</p>
@@ -170,7 +185,7 @@ tailwind.config = {
             <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check</span>Quality Score +4.2 punkti</li>
           </ul>
         </div>
-        <div class="bg-surface-container-low p-10 space-y-6">
+        <div class="bg-surface-container-low p-6 md:p-10 space-y-6">
           <div class="font-headline text-5xl font-black text-primary-container/20 tracking-tighter">02</div>
           <h3 class="font-headline text-xl font-bold uppercase tracking-tight">Performance Max ieviešana</h3>
           <p class="text-on-surface/60 leading-relaxed">Bijām pirmie Latvijā, kas ieviesām Performance Max kampaņas elektronikas e-komercijā. Izveidojām jaudīgus asset groups ar A/B testētiem virsrakstiem un attēliem.</p>
@@ -180,7 +195,7 @@ tailwind.config = {
             <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check</span>Audience signals no CRM datiem</li>
           </ul>
         </div>
-        <div class="bg-surface-container-low p-10 space-y-6">
+        <div class="bg-surface-container-low p-6 md:p-10 space-y-6">
           <div class="font-headline text-5xl font-black text-primary-container/20 tracking-tighter">03</div>
           <h3 class="font-headline text-xl font-bold uppercase tracking-tight">Shopping feed optimizācija</h3>
           <p class="text-on-surface/60 leading-relaxed">Optimizējām visu produktu plūsmu — pārrakstījām produktu nosaukumus, aprakstus un pievienojām custom labels. Integrējām dinamisko remarketing ar produktu kategorijām.</p>
@@ -195,36 +210,36 @@ tailwind.config = {
   </section>
 
   <!-- Results -->
-  <section class="bg-surface-container-lowest py-32">
-    <div class="max-w-7xl mx-auto px-8 space-y-16">
+  <section class="bg-surface-container-lowest py-16 md:py-32">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 space-y-12 md:space-y-16">
       <div>
         <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">03 — Rezultāti</span>
         <h2 class="font-headline text-4xl font-bold tracking-tight mt-4">Rezultāti</h2>
         <p class="text-on-surface/60 mt-4 max-w-2xl leading-relaxed">Pēc 6 mēnešiem sadarbības TechBaltic ir kļuvis par vienu no mūsu labākajiem veiksmes stāstiem.</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-px bg-white/5">
-        <div class="bg-surface-container-lowest p-12 space-y-3">
-          <div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">6.1×</div>
+        <div class="bg-surface-container-lowest p-6 md:p-12 space-y-3">
+          <div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">6.1×</div>
           <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Galvenais ROAS</div>
         </div>
-        <div class="bg-surface-container-lowest p-12 space-y-3">
-          <div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">+215%</div>
+        <div class="bg-surface-container-lowest p-6 md:p-12 space-y-3">
+          <div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">+215%</div>
           <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Konversiju pieaugums</div>
         </div>
-        <div class="bg-surface-container-lowest p-12 space-y-3">
-          <div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">-38%</div>
+        <div class="bg-surface-container-lowest p-6 md:p-12 space-y-3">
+          <div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">-38%</div>
           <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">CPC samazinājums</div>
         </div>
-        <div class="bg-surface-container-lowest p-12 space-y-3">
-          <div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">+67%</div>
+        <div class="bg-surface-container-lowest p-6 md:p-12 space-y-3">
+          <div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">+67%</div>
           <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">CTR uzlabojums</div>
         </div>
-        <div class="bg-surface-container-lowest p-12 space-y-3">
-          <div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">€12.4K</div>
+        <div class="bg-surface-container-lowest p-6 md:p-12 space-y-3">
+          <div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">€12.4K</div>
           <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">ROAS ieņēmumi / mēnesī</div>
         </div>
-        <div class="bg-surface-container-lowest p-12 space-y-3">
-          <div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">4.8×</div>
+        <div class="bg-surface-container-lowest p-6 md:p-12 space-y-3">
+          <div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">4.8×</div>
           <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">6 mēnešu ROI</div>
         </div>
       </div>
@@ -232,7 +247,7 @@ tailwind.config = {
   </section>
 
   <!-- Timeline -->
-  <section class="py-32 px-8">
+  <section class="py-16 md:py-32 px-4 md:px-8">
     <div class="max-w-7xl mx-auto space-y-16">
       <div>
         <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">04 — Laika grafiks</span>
@@ -241,7 +256,7 @@ tailwind.config = {
       <div class="relative">
         <!-- Connecting line -->
         <div class="absolute top-8 left-0 right-0 h-px bg-white/10 hidden md:block"></div>
-        <div class="grid grid-cols-2 md:grid-cols-6 gap-8">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-8">
           <div class="relative space-y-4">
             <div class="w-16 h-16 bg-primary-container flex items-center justify-center font-headline font-black text-on-primary-container text-lg relative z-10">1</div>
             <h4 class="font-headline font-bold text-sm uppercase tracking-tight">Audits</h4>
@@ -278,10 +293,10 @@ tailwind.config = {
   </section>
 
   <!-- Testimonial -->
-  <section class="bg-surface-container-lowest py-32 px-8">
-    <div class="max-w-2xl mx-auto text-center space-y-8">
+  <section class="bg-surface-container-lowest py-16 md:py-32 px-8">
+    <div class="max-w-2xl mx-auto text-center space-y-6 md:space-y-8 px-4 md:px-0">
       <div class="font-headline text-6xl text-primary-container/30 font-black leading-none">"</div>
-      <blockquote class="font-body italic text-2xl leading-relaxed text-on-surface/80">
+      <blockquote class="font-body italic text-lg md:text-2xl leading-relaxed text-on-surface/80">
         ROIS komanda ne tikai uzlaboja mūsu reklāmu efektivitāti — viņi fundamentāli mainīja veidu, kā mēs domājam par digitālo mārketingu. Sešos mēnešos no skeptiķa kļuvu par pārliecinātu datu vadītas pieejas atbalstītāju.
       </blockquote>
       <div class="pt-4 border-t border-white/10">
@@ -292,7 +307,7 @@ tailwind.config = {
   </section>
 
   <!-- Next case study -->
-  <section class="bg-surface-container-low py-16 px-8">
+  <section class="bg-surface-container-low py-10 md:py-16 px-4 md:px-8">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
       <div class="space-y-3">
         <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Nākamais darbs</div>
@@ -309,10 +324,10 @@ tailwind.config = {
   </section>
 
   <!-- CTA Banner -->
-  <section class="py-32 px-8 max-w-7xl mx-auto">
-    <div class="bg-primary-container p-20 flex flex-col md:flex-row justify-between items-center gap-10">
-      <h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-primary-container">Gatavi augt?</h2>
-      <a href="contact.html" class="bg-on-surface text-surface py-6 px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform">Sazināties ar mums</a>
+  <section class="py-16 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+    <div class="bg-primary-container px-8 py-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+      <h2 class="font-headline text-4xl md:text-7xl font-black tracking-tighter text-on-primary-container text-center md:text-left">Gatavi augt?</h2>
+      <a href="contact.html" class="bg-on-surface text-surface py-4 px-8 md:py-6 md:px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform">Sazināties ar mums</a>
     </div>
   </section>
 
@@ -320,7 +335,7 @@ tailwind.config = {
 
 <!-- Footer -->
 <footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
-<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-8">
 <div class="space-y-6">
 <div class="text-xl font-black text-on-surface font-headline">ROIS</div>
 <p class="text-on-surface/40 text-sm leading-relaxed">Augstas efektivitātes digitālā mārketinga aģentūra Rīgā. Mēs ne tikai pērkam reklāmas laukumu, mēs būvējam peļņas mašīnas.</p>
@@ -352,7 +367,7 @@ tailwind.config = {
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
 <span class="text-on-surface/40 text-xs">© 2026 ROIS. Visas tiesības aizsargātas.</span>
 <div class="flex gap-8">
 <a href="privacy.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Privātuma politika</a>
@@ -361,5 +376,26 @@ tailwind.config = {
 </div>
 </footer>
 
+
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('hidden');
+      icon.textContent=open?'menu':'close';
+    });
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.add('hidden');
+        icon.textContent='menu';
+      });
+    });
+  }
+})();
+</script>
 </body>
 </html>

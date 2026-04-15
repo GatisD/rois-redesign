@@ -95,7 +95,7 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
 <!-- Header Section -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
-<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
 <a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
 <div class="hidden md:flex gap-10">
 <a class="font-headline tracking-tight font-bold uppercase text-xs text-primary-container border-b-2 border-primary-container transition-transform active:scale-95" href="index.html">Sākums</a>
@@ -105,16 +105,31 @@
 <a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="about.html">Par mums</a>
 <a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="contact.html">Kontakti</a>
 </div>
-<div class="flex items-center gap-6">
-<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest active:scale-95 transition-transform">
+<div class="hidden md:flex items-center gap-6">
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest active:scale-95 transition-transform">
                     Sākt sadarbību
                 </a>
 </div>
+
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors" aria-label="Atvērt izvēlni"><span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span></button>
 </nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 py-6 space-y-1">
+<a href="index.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Sākums</a>
+<a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
+<a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
+<a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
+<a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
+<div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
+</div>
+</div>
 </header>
-<main class="precision-grid pt-24 overflow-x-hidden">
+<main class="precision-grid pt-20 md:pt-24 overflow-x-hidden">
 <!-- Hero Section -->
-<section class="min-h-screen flex items-center px-8 max-w-7xl mx-auto">
+<section class="min-h-screen flex items-center px-4 md:px-8 max-w-7xl mx-auto">
 <div class="grid md:grid-cols-2 gap-12 items-center w-full">
 <div class="space-y-8">
 <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">Pirmā ELITES mārketinga aģentūra Latvijā</span>
@@ -125,10 +140,10 @@ Digitālais mārketings, <span class="text-primary-container">kas sniedz vairāk
 Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvijas uzņēmumiem. Kopā sasniegsim vairāk.
 </p>
 <div class="flex flex-wrap gap-4 pt-4">
-<a href="contact.html" class="bg-primary-container text-on-primary-container px-10 py-5 font-headline font-bold text-sm uppercase tracking-widest active:scale-95 transition-transform">
+<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-4 md:px-10 md:py-5 font-headline font-bold text-sm uppercase tracking-widest active:scale-95 transition-transform">
                             Sākt sadarbību
                         </a>
-<a href="case-studies.html" class="border border-primary-container/20 hover:border-primary-container/60 px-10 py-5 font-headline font-bold text-sm uppercase tracking-widest transition-all">
+<a href="case-studies.html" class="border border-primary-container/20 hover:border-primary-container/60 px-6 py-4 md:px-10 md:py-5 font-headline font-bold text-sm uppercase tracking-widest transition-all">
                             Skatīt darbus
                         </a>
 </div>
@@ -144,75 +159,75 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 </div>
 </section>
 <!-- Services Section -->
-<section class="py-32 px-8 max-w-7xl mx-auto">
-<div class="mb-20">
+<section class="py-16 md:py-32 px-4 md:px-8 max-w-7xl mx-auto">
+<div class="mb-10 md:mb-20">
 <span class="font-label text-primary uppercase tracking-[0.3em] text-xs font-bold">Mūsu Kompetence</span>
 <h2 class="font-headline text-4xl md:text-5xl font-bold mt-4">Pakalpojumi Izaugsmei</h2>
 </div>
 <div class="flex flex-col gap-px bg-white/5">
-<a href="google-ads.html" class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
-<div class="md:col-span-1"><span class="material-symbols-outlined text-primary-container text-4xl">ads_click</span></div>
-<div class="md:col-span-3"><h3 class="font-headline text-xl font-bold uppercase tracking-tight">Google Reklāma</h3></div>
-<div class="md:col-span-6"><p class="text-on-surface/60 font-body">Precīza reklāma meklētājservisos tieši tad, kad klients meklē jūsu produktu vai pakalpojumu.</p></div>
-<div class="md:col-span-2 text-right"><span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
+<a href="google-ads.html" class="group bg-surface hover:bg-surface-container-low transition-all py-5 md:py-10 px-6 flex items-center gap-4 md:grid md:grid-cols-12 md:gap-8">
+<div class="shrink-0 md:col-span-1"><span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl">ads_click</span></div>
+<div class="flex-1 md:col-span-3"><h3 class="font-headline text-base md:text-xl font-bold uppercase tracking-tight">Google Reklāma</h3></div>
+<div class="md:col-span-6 hidden md:block"><p class="text-on-surface/60 font-body">Precīza reklāma meklētājservisos tieši tad, kad klients meklē jūsu produktu vai pakalpojumu.</p></div>
+<div class="shrink-0 md:col-span-2 md:text-right"><span class="material-symbols-outlined opacity-40 md:opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
 </a>
-<a href="meta-ads.html" class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
-<div class="md:col-span-1"><span class="material-symbols-outlined text-primary-container text-4xl">campaign</span></div>
-<div class="md:col-span-3"><h3 class="font-headline text-xl font-bold uppercase tracking-tight">Meta Reklāma</h3></div>
-<div class="md:col-span-6"><p class="text-on-surface/60 font-body">Piesaistošas kampaņas Facebook un Instagram, kas pārvērš skatījumus klientos un pārdošanā.</p></div>
-<div class="md:col-span-2 text-right"><span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
+<a href="meta-ads.html" class="group bg-surface hover:bg-surface-container-low transition-all py-5 md:py-10 px-6 flex items-center gap-4 md:grid md:grid-cols-12 md:gap-8">
+<div class="shrink-0 md:col-span-1"><span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl">campaign</span></div>
+<div class="flex-1 md:col-span-3"><h3 class="font-headline text-base md:text-xl font-bold uppercase tracking-tight">Meta Reklāma</h3></div>
+<div class="md:col-span-6 hidden md:block"><p class="text-on-surface/60 font-body">Piesaistošas kampaņas Facebook un Instagram, kas pārvērš skatījumus klientos un pārdošanā.</p></div>
+<div class="shrink-0 md:col-span-2 md:text-right"><span class="material-symbols-outlined opacity-40 md:opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
 </a>
-<a href="services.html" class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
-<div class="md:col-span-1"><span class="material-symbols-outlined text-primary-container text-4xl">play_circle</span></div>
-<div class="md:col-span-3"><h3 class="font-headline text-xl font-bold uppercase tracking-tight">TikTok Reklāma</h3></div>
-<div class="md:col-span-6"><p class="text-on-surface/60 font-body">TikTok reklāmas un satura veidošana — platforma ar augstāko organisko sasniedzamību.</p></div>
-<div class="md:col-span-2 text-right"><span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
+<a href="services.html" class="group bg-surface hover:bg-surface-container-low transition-all py-5 md:py-10 px-6 flex items-center gap-4 md:grid md:grid-cols-12 md:gap-8">
+<div class="shrink-0 md:col-span-1"><span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl">play_circle</span></div>
+<div class="flex-1 md:col-span-3"><h3 class="font-headline text-base md:text-xl font-bold uppercase tracking-tight">TikTok Reklāma</h3></div>
+<div class="md:col-span-6 hidden md:block"><p class="text-on-surface/60 font-body">TikTok reklāmas un satura veidošana — platforma ar augstāko organisko sasniedzamību.</p></div>
+<div class="shrink-0 md:col-span-2 md:text-right"><span class="material-symbols-outlined opacity-40 md:opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
 </a>
-<a href="services.html" class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
-<div class="md:col-span-1"><span class="material-symbols-outlined text-primary-container text-4xl">work</span></div>
-<div class="md:col-span-3"><h3 class="font-headline text-xl font-bold uppercase tracking-tight">LinkedIn Reklāma</h3></div>
-<div class="md:col-span-6"><p class="text-on-surface/60 font-body">B2B mērķauditorijas sasniegšana caur LinkedIn — lēmumu pieņēmēji, vadītāji, profesionāļi.</p></div>
-<div class="md:col-span-2 text-right"><span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
+<a href="services.html" class="group bg-surface hover:bg-surface-container-low transition-all py-5 md:py-10 px-6 flex items-center gap-4 md:grid md:grid-cols-12 md:gap-8">
+<div class="shrink-0 md:col-span-1"><span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl">work</span></div>
+<div class="flex-1 md:col-span-3"><h3 class="font-headline text-base md:text-xl font-bold uppercase tracking-tight">LinkedIn Reklāma</h3></div>
+<div class="md:col-span-6 hidden md:block"><p class="text-on-surface/60 font-body">B2B mērķauditorijas sasniegšana caur LinkedIn — lēmumu pieņēmēji, vadītāji, profesionāļi.</p></div>
+<div class="shrink-0 md:col-span-2 md:text-right"><span class="material-symbols-outlined opacity-40 md:opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
 </a>
-<a href="web-development.html" class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
-<div class="md:col-span-1"><span class="material-symbols-outlined text-primary-container text-4xl">code</span></div>
-<div class="md:col-span-3"><h3 class="font-headline text-xl font-bold uppercase tracking-tight">Mājaslapu izstrāde</h3></div>
-<div class="md:col-span-6"><p class="text-on-surface/60 font-body">Ātras, konvertējošas un tehniski perfektas mājaslapas un e-komercijas risinājumi.</p></div>
-<div class="md:col-span-2 text-right"><span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
+<a href="web-development.html" class="group bg-surface hover:bg-surface-container-low transition-all py-5 md:py-10 px-6 flex items-center gap-4 md:grid md:grid-cols-12 md:gap-8">
+<div class="shrink-0 md:col-span-1"><span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl">code</span></div>
+<div class="flex-1 md:col-span-3"><h3 class="font-headline text-base md:text-xl font-bold uppercase tracking-tight">Mājaslapu izstrāde</h3></div>
+<div class="md:col-span-6 hidden md:block"><p class="text-on-surface/60 font-body">Ātras, konvertējošas un tehniski perfektas mājaslapas un e-komercijas risinājumi.</p></div>
+<div class="shrink-0 md:col-span-2 md:text-right"><span class="material-symbols-outlined opacity-40 md:opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
 </a>
-<a href="branding.html" class="group bg-surface hover:bg-surface-container-low transition-all py-10 px-6 grid md:grid-cols-12 items-center gap-8">
-<div class="md:col-span-1"><span class="material-symbols-outlined text-primary-container text-4xl">brush</span></div>
-<div class="md:col-span-3"><h3 class="font-headline text-xl font-bold uppercase tracking-tight">Grafiskais Dizains</h3></div>
-<div class="md:col-span-6"><p class="text-on-surface/60 font-body">Logo, vizuālā identitāte un brendings, kas rada uzticību un izceļas tirgū.</p></div>
-<div class="md:col-span-2 text-right"><span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
+<a href="branding.html" class="group bg-surface hover:bg-surface-container-low transition-all py-5 md:py-10 px-6 flex items-center gap-4 md:grid md:grid-cols-12 md:gap-8">
+<div class="shrink-0 md:col-span-1"><span class="material-symbols-outlined text-primary-container text-3xl md:text-4xl">brush</span></div>
+<div class="flex-1 md:col-span-3"><h3 class="font-headline text-base md:text-xl font-bold uppercase tracking-tight">Grafiskais Dizains</h3></div>
+<div class="md:col-span-6 hidden md:block"><p class="text-on-surface/60 font-body">Logo, vizuālā identitāte un brendings, kas rada uzticību un izceļas tirgū.</p></div>
+<div class="shrink-0 md:col-span-2 md:text-right"><span class="material-symbols-outlined opacity-40 md:opacity-0 group-hover:opacity-100 transition-all text-primary-container">arrow_forward</span></div>
 </a>
 </div>
 </section>
 <!-- Results Section -->
-<section class="bg-surface-container-lowest py-32">
-<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-3 gap-px bg-white/5">
-<div class="bg-surface-container-lowest p-16 space-y-4">
-<div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">312%</div>
+<section class="bg-surface-container-lowest py-16 md:py-32">
+<div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5">
+<div class="bg-surface-container-lowest p-8 md:p-16 space-y-4">
+<div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">312%</div>
 <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Organic traffic growth</div>
 </div>
-<div class="bg-surface-container-lowest p-16 space-y-4">
-<div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">4.2x</div>
+<div class="bg-surface-container-lowest p-8 md:p-16 space-y-4">
+<div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">4.2x</div>
 <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">ROAS in 60 days</div>
 </div>
-<div class="bg-surface-container-lowest p-16 space-y-4">
-<div class="font-headline text-5xl font-extrabold text-primary tracking-tighter">€2.1M</div>
+<div class="bg-surface-container-lowest p-8 md:p-16 space-y-4">
+<div class="font-headline text-3xl md:text-5xl font-extrabold text-primary tracking-tighter">€2.1M</div>
 <div class="font-label text-xs uppercase tracking-widest text-on-surface/40">Revenue generated</div>
 </div>
 </div>
 </section>
 <!-- Testimonials -->
-<section class="py-32 w-full">
+<section class="py-16 md:py-32 w-full">
 <div class="max-w-7xl mx-auto px-8">
 <div class="mb-20 text-center">
 <h2 class="font-headline text-4xl font-bold tracking-tight uppercase">Ko saka mūsu klienti</h2>
 </div>
 <div class="grid md:grid-cols-3 gap-8">
-<div class="min-w-0 bg-surface-container-high p-10 space-y-6 border-t-4 border-primary-container" style="box-shadow:0 20px 40px -10px rgba(0,0,0,0.4)">
+<div class="min-w-0 bg-surface-container-high p-6 md:p-10 space-y-6 border-t-4 border-primary-container" style="box-shadow:0 20px 40px -10px rgba(0,0,0,0.4)">
 <div class="flex gap-1 text-primary-container">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -226,7 +241,7 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 <div class="text-xs text-on-surface/40 font-label">CEO, TechBaltic</div>
 </div>
 </div>
-<div class="min-w-0 bg-surface-container-high p-10 space-y-6 border-t-4 border-primary-container" style="box-shadow:0 20px 40px -10px rgba(0,0,0,0.4)">
+<div class="min-w-0 bg-surface-container-high p-6 md:p-10 space-y-6 border-t-4 border-primary-container" style="box-shadow:0 20px 40px -10px rgba(0,0,0,0.4)">
 <div class="flex gap-1 text-primary-container">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -240,7 +255,7 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 <div class="text-xs text-on-surface/40 font-label">Marketing Lead, NordicDesign</div>
 </div>
 </div>
-<div class="min-w-0 bg-surface-container-high p-10 space-y-6 border-t-4 border-primary-container" style="box-shadow:0 20px 40px -10px rgba(0,0,0,0.4)">
+<div class="min-w-0 bg-surface-container-high p-6 md:p-10 space-y-6 border-t-4 border-primary-container" style="box-shadow:0 20px 40px -10px rgba(0,0,0,0.4)">
 <div class="flex gap-1 text-primary-container">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -258,11 +273,11 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 </div>
 </section>
 <!-- CTA Banner -->
-<section class="py-32 w-full">
+<section class="py-16 md:py-32 w-full">
 <div class="max-w-7xl mx-auto px-8">
-<div class="bg-primary-container p-20 flex flex-col md:flex-row justify-between items-center gap-10">
-<h2 class="font-headline text-5xl md:text-7xl font-black tracking-tighter text-on-primary-container">Gatavi augt?</h2>
-<a href="contact.html" class="bg-on-surface text-surface py-6 px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform active:scale-95">
+<div class="bg-primary-container px-8 py-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+<h2 class="font-headline text-4xl md:text-7xl font-black tracking-tighter text-on-primary-container text-center md:text-left">Gatavi augt?</h2>
+<a href="contact.html" class="bg-on-surface text-surface py-4 px-8 md:py-6 md:px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform active:scale-95">
                     Sazināties ar mums
                 </a>
 </div>
@@ -271,7 +286,7 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 </main>
 <!-- Footer -->
 <footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
-<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-8">
 <div class="space-y-6">
 <div class="text-xl font-black text-on-surface">ROIS</div>
 <p class="text-on-surface/40 text-sm leading-relaxed">
@@ -305,7 +320,7 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
 <span class="text-on-surface/40 text-xs font-inter tracking-wide">© 2026 ROIS. Visas tiesības aizsargātas.</span>
 <div class="flex gap-8">
 <a class="text-on-surface/40 hover:text-on-surface text-xs transition-colors" href="privacy.html">Privātuma politika</a>
@@ -313,4 +328,25 @@ Google Reklāma, Meta Reklāma, TikTok, LinkedIn un mājaslapu izstrāde Latvija
 </div>
 </div>
 </footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('hidden');
+      icon.textContent=open?'menu':'close';
+    });
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.add('hidden');
+        icon.textContent='menu';
+      });
+    });
+  }
+})();
+</script>
 </body></html>

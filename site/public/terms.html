@@ -45,7 +45,7 @@ tailwind.config = {
 <body class="bg-background text-on-surface font-body">
 
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
-<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
 <a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
 <div class="hidden md:flex gap-10">
 <a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
@@ -54,8 +54,23 @@ tailwind.config = {
 <a href="about.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Par mums</a>
 <a href="contact.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Kontakti</a>
 </div>
-<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors" aria-label="Atvērt izvēlni"><span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span></button>
 </nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 py-6 space-y-1">
+<a href="index.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Sākums</a>
+<a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
+<a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
+<a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
+<a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
+<div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
+</div>
+</div>
 </header>
 
 <main class="pt-40 pb-32 px-8">
@@ -144,7 +159,7 @@ tailwind.config = {
 </main>
 
 <footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
-<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-8">
 <div class="space-y-6">
 <div class="text-xl font-black text-on-surface font-headline">ROIS</div>
 <p class="text-on-surface/40 text-sm leading-relaxed">Augstas efektivitātes digitālā mārketinga aģentūra Rīgā. Mēs ne tikai pērkam reklāmas laukumu, mēs būvējam peļņas mašīnas.</p>
@@ -176,7 +191,7 @@ tailwind.config = {
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
 <span class="text-on-surface/40 text-xs">© 2026 ROIS. Visas tiesības aizsargātas.</span>
 <div class="flex gap-8">
 <a href="privacy.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Privātuma politika</a>
@@ -185,5 +200,26 @@ tailwind.config = {
 </div>
 </footer>
 
+
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('hidden');
+      icon.textContent=open?'menu':'close';
+    });
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.add('hidden');
+        icon.textContent='menu';
+      });
+    });
+  }
+})();
+</script>
 </body>
 </html>

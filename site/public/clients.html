@@ -52,7 +52,7 @@ tailwind.config = {
 
 <!-- Header -->
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
-<nav class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
 <a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
 <div class="hidden md:flex gap-10">
 <a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
@@ -62,24 +62,39 @@ tailwind.config = {
 <a href="about.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Par mums</a>
 <a href="contact.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Kontakti</a>
 </div>
-<a href="contact.html" class="bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors" aria-label="Atvērt izvēlni"><span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span></button>
 </nav>
+
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 py-6 space-y-1">
+<a href="index.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Sākums</a>
+<a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
+<a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
+<a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
+<a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
+<div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
+</div>
+</div>
 </header>
 
-<main class="pt-24 overflow-x-hidden">
+<main class="pt-16 md:pt-24 overflow-x-hidden">
 
   <!-- Hero -->
-  <section class="precision-grid py-24 w-full">
-    <div class="max-w-7xl mx-auto px-8">
+  <section class="precision-grid py-12 md:py-24 w-full">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
       <div class="max-w-3xl space-y-6">
         <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">Mūsu portfolio</span>
-        <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight">
+        <h1 class="font-headline text-4xl md:text-7xl font-extrabold tracking-tighter leading-tight">
           Mūsu <span class="text-primary-container">klienti</span>
         </h1>
         <p class="text-on-surface/60 text-lg leading-relaxed max-w-xl">
           Mūsu digitālā mārketinga aģentūras klienti pārstāv dažādas nozares — no būvniecības un nekustamajiem īpašumiem līdz e-komercijai un auto tirdzniecībai.
         </p>
-        <div class="flex gap-8 pt-4">
+        <div class="flex gap-6 md:gap-8 pt-4">
           <div>
             <div class="font-headline text-3xl font-black text-primary">48+</div>
             <div class="font-label text-xs uppercase tracking-widest text-on-surface/40 mt-1">Klienti</div>
@@ -100,11 +115,11 @@ tailwind.config = {
   </section>
 
   <!-- Filter + Grid -->
-  <section class="py-16 w-full">
-    <div class="max-w-7xl mx-auto px-8">
+  <section class="py-8 md:py-16 w-full">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
 
       <!-- Filter tabs -->
-      <div id="filter-container" class="flex flex-wrap gap-3 mb-12">
+      <div id="filter-container" class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-12">
         <button class="filter-btn active font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-primary-container/30 hover:border-primary-container" data-filter="all">Visi</button>
         <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="ads">Reklāma (Ads)</button>
         <button class="filter-btn font-label text-xs font-bold uppercase tracking-widest px-5 py-2.5 border border-white/10 hover:border-primary-container/50 text-on-surface/60 hover:text-on-surface" data-filter="content">Saturs (TikTok)</button>
@@ -127,9 +142,9 @@ tailwind.config = {
   </section>
 
   <!-- CTA Banner -->
-  <section class="py-32 w-full">
+  <section class="py-16 md:py-32 w-full">
     <div class="max-w-7xl mx-auto px-8">
-      <div class="bg-primary-container p-16 md:p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+      <div class="bg-primary-container px-6 py-10 md:p-20 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10">
         <div class="space-y-3">
           <h2 class="font-headline text-4xl md:text-6xl font-black tracking-tighter text-on-primary-container">Kļūsti par nākamo?</h2>
           <p class="text-on-primary-container/70 font-body">Pievienojies 48+ uzņēmumiem, kas uzticēja mums savu izaugsmi.</p>
@@ -143,7 +158,7 @@ tailwind.config = {
 
 <!-- Footer -->
 <footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
-<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-8">
 <div class="space-y-6">
 <div class="text-xl font-black text-on-surface font-headline">ROIS</div>
 <p class="text-on-surface/40 text-sm leading-relaxed">Pirmā ELITES digitālā mārketinga aģentūra Latvijā. Kopā sasniegsim vairāk.</p>
@@ -176,7 +191,7 @@ tailwind.config = {
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
 <span class="text-on-surface/40 text-xs">© 2026 ROIS. Visas tiesības aizsargātas.</span>
 <div class="flex gap-8">
 <a href="privacy.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Privātuma politika</a>
@@ -298,5 +313,26 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
 renderGrid("all");
 </script>
 
+
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('hidden');
+      icon.textContent=open?'menu':'close';
+    });
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.add('hidden');
+        icon.textContent='menu';
+      });
+    });
+  }
+})();
+</script>
 </body>
 </html>
