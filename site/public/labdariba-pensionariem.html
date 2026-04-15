@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="dark" lang="lv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Labdarība pensionāriem — ROIS Mārketinga Aģentūra</title>
+<meta name="description" content="Sadarbojoties ar ROIS, 10% no pirmās apkalpošanas maksas tiek ziedoti pensionāriem. Cieņa un atbalsts vecākajai paaudzei."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary": "#c8c6c5","on-primary": "#2a1a0a","on-primary-fixed-variant": "#6b4f2e",
+          "tertiary": "#ffb59d","secondary-fixed": "#e5e2e1","outline-variant": "#424656",
+          "error-container": "#93000a","primary": "#d4b898","inverse-primary": "#8a6e4a",
+          "on-secondary-fixed": "#1c1b1b","surface-container-low": "#1c1b1b",
+          "on-surface": "#e5e2e1","outline": "#8c90a1","on-secondary": "#313030",
+          "surface-bright": "#3a3939","on-primary-container": "#faf5ef",
+          "on-tertiary-fixed-variant": "#832600","primary-container": "#b59569",
+          "on-tertiary-container": "#fff6f4","on-secondary-container": "#bab8b7",
+          "surface-container": "#201f1f","secondary-fixed-dim": "#c8c6c5",
+          "primary-fixed": "#f0e0cc","surface-dim": "#131313","on-tertiary": "#5d1900",
+          "on-tertiary-fixed": "#390c00","on-background": "#e5e2e1",
+          "on-secondary-fixed-variant": "#474646","tertiary-fixed-dim": "#ffb59d",
+          "tertiary-fixed": "#ffdbd0","surface-container-lowest": "#0e0e0e",
+          "surface": "#131313","inverse-surface": "#e5e2e1","on-error-container": "#ffdad6",
+          "primary-fixed-dim": "#d4b898","tertiary-container": "#cc4204",
+          "surface-container-highest": "#353534","surface-container-high": "#2a2a2a",
+          "error": "#ffb4ab","on-error": "#690005","on-surface-variant": "#c2c6d8",
+          "on-primary-fixed": "#1a0f05","background": "#131313",
+          "secondary-container": "#4a4949","surface-tint": "#d4b898",
+          "inverse-on-surface": "#313030","surface-variant": "#353534"
+        },
+        "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+        "fontFamily": {"headline": ["Manrope"],"body": ["Inter"],"label": ["Inter"]}
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .precision-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
+<a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
+<div class="hidden md:flex gap-4">
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="index.html">Sākums</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="services.html">Pakalpojumi</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="clients.html">Klienti</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="case-studies.html">Darbi</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="atsauksmes.html">Atsauksmes</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="about.html">Par mums</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-primary-container border-b-2 border-primary-container" href="labdariba.html">Labdarība</a>
+<a class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200" href="contact.html">Kontakti</a>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest active:scale-95 transition-transform">Sākt sadarbību</a>
+</div>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors" aria-label="Atvērt izvēlni">
+<span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+</button>
+</nav>
+<div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 py-6 space-y-1">
+<a href="index.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Sākums</a>
+<a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
+<a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
+<a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="atsauksmes.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Atsauksmes</a>
+<a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
+<a href="labdariba.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-primary-container border-b border-white/5 transition-colors">Labdarība</a>
+<a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
+<div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
+</div>
+</div>
+</header>
+
+<main class="precision-grid pt-20 md:pt-24 overflow-x-hidden">
+
+<!-- Breadcrumb -->
+<div class="max-w-7xl mx-auto px-4 md:px-8 py-4">
+  <div class="flex items-center gap-2 text-xs text-on-surface/40 font-label uppercase tracking-widest">
+    <a href="labdariba.html" class="hover:text-primary-container transition-colors">Labdarība</a>
+    <span class="material-symbols-outlined text-sm">chevron_right</span>
+    <span class="text-primary-container">Pensionāriem</span>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="py-12 md:py-20 px-4 md:px-8 max-w-7xl mx-auto">
+  <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+    <div>
+      <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">Labdarība</span>
+      <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mt-4 mb-2">Pensionāriem</h1>
+      <div class="w-16 h-0.5 bg-primary-container mb-8"></div>
+      <p class="text-on-surface/70 text-lg leading-relaxed mb-6">
+        Sadarbojoties ar <strong class="text-on-surface">ROIS</strong>, <strong class="text-on-surface">10% no pirmās apkalpošanas maksas</strong> tiek ziedoti pensionāriem.
+      </p>
+      <p class="text-on-surface/60 leading-relaxed mb-4">
+        Palīdzība vecāka gadagājuma cilvēkiem nav tikai labs nodoms — tā ir konkrēta rīcība, kas maina viņu ikdienu.
+      </p>
+      <p class="text-on-surface/60 leading-relaxed mb-8">
+        Sadarbojoties ar ROIS, Jūs palīdzat padarīt pasauli labāku.
+      </p>
+      <a href="https://www.samariesi.lv" target="_blank" rel="noopener" class="inline-flex items-center gap-3 font-headline font-bold text-sm uppercase tracking-widest text-primary-container hover:gap-5 transition-all duration-300">
+        samariesi.lv
+        <span class="material-symbols-outlined">open_in_new</span>
+      </a>
+    </div>
+    <div class="relative overflow-hidden" style="min-height: 400px;">
+      <img src="https://rois.lv/wp-content/uploads/2026/01/hand-2906434_1920.webp"
+           alt="Pensionāru atbalsts" class="w-full h-full object-cover brightness-75" style="min-height:400px;object-position:center;"/>
+      <div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 p-8">
+        <div class="bg-surface/80 backdrop-blur-sm p-6 border border-white/10">
+          <div class="font-headline text-4xl font-black text-primary-container">10%</div>
+          <div class="text-on-surface/60 text-sm mt-1">no pirmās sadarbības maksas — pensionāriem</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Donor logos -->
+<section class="bg-surface-container-lowest py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="mb-12">
+      <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">Ziedotāji</span>
+      <h2 class="font-headline text-3xl md:text-4xl font-bold tracking-tight mt-3">Pensionāriem jau ziedoja</h2>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/5 max-w-2xl">
+      <div class="bg-surface-container-lowest p-8 flex items-center justify-center">
+        <img src="https://rois.lv/wp-content/uploads/2026/02/Azeron.webp" alt="Azeron" class="max-h-12 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity filter brightness-0 invert"/>
+      </div>
+    </div>
+    <p class="mt-8 text-on-surface/40 text-sm">Šeit varētu būt arī jūsu uzņēmums. <a href="contact.html" class="text-primary-container hover:underline">Sāksim sadarbību →</a></p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16 md:py-32 w-full">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="bg-primary-container px-8 py-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-10">
+      <h2 class="font-headline text-3xl md:text-5xl font-black tracking-tighter text-on-primary-container text-center md:text-left">Palīdzot sev,<br/>tu palīdzi arī citiem.</h2>
+      <a href="contact.html" class="shrink-0 bg-on-surface text-surface py-4 px-8 md:py-6 md:px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform active:scale-95">
+        Piesaki konsultāciju
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-8">
+<div class="space-y-6">
+<div class="text-xl font-black text-on-surface">ROIS</div>
+<p class="text-on-surface/40 text-sm leading-relaxed">Augstas efektivitātes digitālā mārketinga aģentūra Rīgā. Mēs ne tikai pērkam reklāmas laukumu, mēs būvējam peļņas mašīnas.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Pakalpojumi</h4>
+<ul class="space-y-4 text-sm tracking-wide">
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="google-ads.html">Google Ads</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="meta-ads.html">Meta Ads</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="web-development.html">Web Development</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="branding.html">Branding</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Uzņēmums</h4>
+<ul class="space-y-4 text-sm tracking-wide">
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="about.html">Par mums</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="case-studies.html">Darbi</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="labdariba.html">Labdarība</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="contact.html">Kontakti</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Sociālie</h4>
+<ul class="space-y-4 text-sm tracking-wide">
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">LinkedIn</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Instagram</a></li>
+<li><a class="text-on-surface/40 hover:text-on-surface transition-colors" href="#">Facebook</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<span class="text-on-surface/40 text-xs tracking-wide">© 2026 ROIS. Visas tiesības aizsargātas.</span>
+<div class="flex gap-8">
+<a class="text-on-surface/40 hover:text-on-surface text-xs transition-colors" href="privacy.html">Privātuma politika</a>
+<a class="text-on-surface/40 hover:text-on-surface text-xs transition-colors" href="terms.html">Noteikumi</a>
+</div>
+</div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('hidden');
+      icon.textContent=open?'menu':'close';
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.add('hidden');
+        icon.textContent='menu';
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>
