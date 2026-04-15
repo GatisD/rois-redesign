@@ -47,7 +47,7 @@ tailwind.config = {
 <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
 <nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
 <a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
-<div class="hidden md:flex gap-10">
+<div class="hidden md:flex gap-6">
 <a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
 <a href="services.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Pakalpojumi</a>
 <a href="case-studies.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Darbi</a>
@@ -66,6 +66,7 @@ tailwind.config = {
 <a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
 <a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
 <a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="atsauksmes.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Atsauksmes</a>
 <a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
 <a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
 <div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
@@ -74,10 +75,20 @@ tailwind.config = {
 </header>
 
 <!-- Hero -->
-<section class="pt-40 pb-24 px-8 max-w-7xl mx-auto precision-grid">
-  <p class="text-primary font-headline font-bold uppercase text-xs tracking-widest mb-6">Par mums</p>
-  <h1 class="font-headline font-black text-6xl md:text-8xl tracking-tighter text-on-surface mb-8 max-w-4xl leading-none">Aģentūra, kas iestājas par rezultātiem</h1>
-  <p class="text-on-surface/60 text-xl max-w-2xl leading-relaxed">Mēs nesolām reklāmas iespaidu. Mēs piegādājam izmērāmu izaugsmi — ar datiem, stratēģiju un komandu, kas nepieļauj neveiksmi.</p>
+<section class="precision-grid w-full">
+  <div class="relative overflow-hidden">
+    <img src="https://rois.lv/wp-content/uploads/2025/06/Trio-pic-main-2.webp"
+         alt="ROIS komanda"
+         class="w-full max-h-[60vh] object-cover object-top brightness-50"
+         loading="lazy"/>
+    <div class="absolute inset-0 flex flex-col justify-end">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 pb-12 md:pb-20 w-full">
+        <p class="text-primary font-headline font-bold uppercase text-xs tracking-widest mb-4">Par mums</p>
+        <h1 class="font-headline font-black text-4xl md:text-7xl tracking-tighter text-white mb-4 max-w-3xl leading-tight">Aģentūra, kas iestājas par rezultātiem</h1>
+        <p class="text-white/70 text-lg max-w-xl leading-relaxed">Pirmā ELITES mārketinga aģentūra Latvijā. Mēs piegādājam izmērāmu izaugsmi — ar datiem, stratēģiju un komandu, kas nepieļauj neveiksmi.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Mission -->
@@ -86,8 +97,8 @@ tailwind.config = {
     <div class="grid md:grid-cols-2 gap-16 items-center">
       <div>
         <h2 class="font-headline font-black text-4xl md:text-5xl tracking-tighter text-on-surface mb-8">Mūsu misija</h2>
-        <p class="text-on-surface/60 text-lg leading-relaxed mb-6">ROIS tika dibināta ar vienu mērķi: sniegt Latvijas uzņēmumiem piekļuvi pasaules klases digitālā mārketinga pakalpojumiem. Mēs ticam, ka mārketingam jārada izmērāma vērtība — ne tikai skaistas atskaites.</p>
-        <p class="text-on-surface/60 leading-relaxed">Katrs klients saņem individuālu pieeju, pilnīgu pārskatāmību un komandu, kas saprot jūsu biznesa realitāti. Mēs augam kopā ar saviem klientiem — jo mūsu panākumi ir atkarīgi no jūsu panākumiem.</p>
+        <p class="text-on-surface/60 text-lg leading-relaxed mb-6">Šis stāsts nav par mums — šis stāsts VIENMĒR ir par klientu. Ja jūs meklējat partnerus, kas reklāmas kampaņas izstrādā balstoties uz datiem un pircēju psiholoģiju, domā ārpus kastes un ir sasniedzami 24/7, tad mēs esam aģentūra, kuru jūs meklējat.</p>
+        <p class="text-on-surface/60 leading-relaxed">Mēs esam ROIS — Ieguldījumu Atdeves Stratēģijas jūsu biznesam. Mūsu misija: sniegt augstas kvalitātes servisu, sekojot līdzi jaunākajām tendencēm digitālajā mārketingā un uzņemoties atbildību par katru ieguldīto eiro.</p>
       </div>
       <div class="grid grid-cols-3 gap-6">
         <div class="bg-surface-container-low p-6 text-center">

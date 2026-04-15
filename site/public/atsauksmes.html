@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="dark" lang="lv">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ROIS | Atsauksmes — Video pieredzes stāsti</title>
+<meta name="description" content="Skaties ROIS mārketinga aģentūras atsauksmes. Klientu video stāsti par sadarbību, rezultātiem un mūsu pieeju digitālajam mārketingam."/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "secondary": "#c8c6c5","on-primary": "#2a1a0a","on-primary-fixed-variant": "#6b4f2e",
+        "tertiary": "#ffb59d","secondary-fixed": "#e5e2e1","outline-variant": "#424656",
+        "error-container": "#93000a","primary": "#d4b898","inverse-primary": "#8a6e4a",
+        "on-secondary-fixed": "#1c1b1b","surface-container-low": "#1c1b1b",
+        "on-surface": "#e5e2e1","outline": "#8c90a1","on-secondary": "#313030",
+        "surface-bright": "#3a3939","on-primary-container": "#faf5ef",
+        "primary-container": "#b59569","surface-container": "#201f1f",
+        "primary-fixed": "#f0e0cc","surface-dim": "#131313","on-background": "#e5e2e1",
+        "surface-container-lowest": "#0e0e0e","surface": "#131313",
+        "inverse-surface": "#e5e2e1","primary-fixed-dim": "#d4b898",
+        "surface-container-highest": "#353534","surface-container-high": "#2a2a2a",
+        "error": "#ffb4ab","on-error": "#690005","on-surface-variant": "#c2c6d8",
+        "background": "#131313","secondary-container": "#4a4949",
+        "surface-tint": "#d4b898","inverse-on-surface": "#313030","surface-variant": "#353534"
+      },
+      "borderRadius": {"DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "0.75rem"},
+      "fontFamily": {"headline": ["Manrope"],"body": ["Inter"],"label": ["Inter"]}
+    }
+  }
+}
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+.precision-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px); }
+.video-card { cursor: pointer; }
+.video-card:hover .play-btn { transform: scale(1.1); background: #b59569; }
+.play-btn { transition: all 0.3s ease; }
+/* Lightbox */
+#lightbox { display: none; position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.95); align-items: center; justify-content: center; }
+#lightbox.open { display: flex; }
+#lightbox video { max-width: min(90vw, 500px); max-height: 80vh; border: 1px solid rgba(255,255,255,0.1); }
+#lightbox-close { position: absolute; top: 20px; right: 24px; color: white; font-size: 2rem; cursor: pointer; opacity: 0.6; line-height: 1; }
+#lightbox-close:hover { opacity: 1; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b border-white/5">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
+<a href="index.html" class="text-2xl font-black tracking-tighter text-on-surface font-headline">ROIS</a>
+<div class="hidden md:flex gap-8">
+<a href="index.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Sākums</a>
+<a href="services.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Pakalpojumi</a>
+<a href="clients.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Klienti</a>
+<a href="case-studies.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Darbi</a>
+<a href="atsauksmes.html" class="font-headline tracking-tight font-bold uppercase text-xs text-primary-container border-b-2 border-primary-container transition-colors duration-200">Atsauksmes</a>
+<a href="about.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Par mums</a>
+<a href="contact.html" class="font-headline tracking-tight font-bold uppercase text-xs text-on-surface/60 hover:text-primary-container transition-colors duration-200">Kontakti</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="contact.html" class="hidden md:block bg-primary-container text-on-primary-container px-6 py-2.5 font-headline font-bold text-xs uppercase tracking-widest">Sākt sadarbību</a>
+<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary-container transition-colors" aria-label="Atvērt izvēlni"><span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span></button>
+</div>
+</nav>
+<!-- Mobile menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-surface-container-lowest border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 py-6 space-y-1">
+<a href="index.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Sākums</a>
+<a href="services.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Pakalpojumi</a>
+<a href="clients.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Klienti</a>
+<a href="case-studies.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Darbi</a>
+<a href="atsauksmes.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-primary-container border-b border-white/5 transition-colors">Atsauksmes</a>
+<a href="about.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container border-b border-white/5 transition-colors">Par mums</a>
+<a href="contact.html" class="flex items-center py-3 font-headline font-bold uppercase text-sm tracking-widest text-on-surface/60 hover:text-primary-container transition-colors">Kontakti</a>
+<div class="pt-4"><a href="contact.html" class="block bg-primary-container text-on-primary-container px-6 py-4 font-headline font-bold text-xs uppercase tracking-widest text-center">Sākt sadarbību</a></div>
+</div>
+</div>
+</header>
+
+<main class="pt-16 md:pt-24">
+
+  <!-- Hero -->
+  <section class="precision-grid py-16 md:py-24 w-full">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="max-w-3xl space-y-6">
+        <span class="font-label text-primary text-xs uppercase tracking-[0.3em] font-bold">Klientu pieredze</span>
+        <h1 class="font-headline text-4xl md:text-6xl font-extrabold tracking-tighter leading-tight">
+          Video <span class="text-primary-container">atsauksmes</span>
+        </h1>
+        <p class="text-on-surface/60 text-lg leading-relaxed max-w-2xl">
+          Mēs ticam, ka labākie rādītāji ir mūsu klientu sasniegtie rezultāti un viņu reālā pieredze. Šeit esam apkopojuši klientu un sadarbības partneru video stāstus.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video grid -->
+  <section class="pb-16 md:pb-24 w-full">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+
+        <!-- Video 1 -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/03/merge_6CD87309-4F23-43F7-AD87-49F12D7B26B8.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/03/3.jpg" alt="Klienta atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/03/merge_E36AA3C8-4730-4E41-BE2C-2472EFE1540C.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/03/4.jpg" alt="Klienta atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/03/merge_72CF1D62-5E03-4922-A114-2D0CA6AF602D.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/03/5.jpg" alt="Klienta atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/03/merge_6C3F1640-9444-4C6A-8D65-D15AFD74AA3D.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/03/2.jpg" alt="Klienta atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/03/merge_2A811323-3AAB-4A44-B377-BB4C5B8C4F38.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/03/1.jpg" alt="Klienta atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 6 — Forge Auto -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/06/Captions_E7DF53.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/06/Forge-auto.png" alt="Forge Auto atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 7 — Andris Lubaks -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/06/copy_2378E339-0723-4A82-A0A9-7413028582C2.mov')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/06/AndrisLubaks.png" alt="Andris Lubaks atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 8 — Improvement -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/06/Captions_F5D888.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/06/Improvement-poster.png" alt="Improvement atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 9 — Deniss -->
+        <div class="video-card group bg-surface-container-low overflow-hidden" onclick="openVideo('https://rois.lv/wp-content/uploads/2025/06/Captions_C1CEA7.mp4')">
+          <div class="relative aspect-[9/16] sm:aspect-video overflow-hidden">
+            <img src="https://rois.lv/wp-content/uploads/2025/06/Deniss.png" alt="Deniss atsauksme" class="w-full h-full object-cover brightness-75 group-hover:brightness-90 transition-all duration-500 group-hover:scale-105"/>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="play-btn w-16 h-16 bg-surface/60 backdrop-blur-sm flex items-center justify-center border border-white/20">
+                <span class="material-symbols-outlined text-white text-3xl ml-1" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-16 md:py-32 w-full">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="bg-primary-container px-8 py-12 md:p-20 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-10">
+        <div>
+          <h2 class="font-headline text-4xl md:text-6xl font-black tracking-tighter text-on-primary-container text-center md:text-left">Kļūsti par nākamo?</h2>
+          <p class="text-on-primary-container/70 font-body mt-2 text-center md:text-left">Piesakies bezmaksas konsultācijai jau šodien.</p>
+        </div>
+        <a href="contact.html" class="flex-shrink-0 bg-on-surface text-surface py-4 px-8 md:py-6 md:px-12 font-headline font-extrabold text-sm uppercase tracking-widest hover:scale-105 transition-transform">Piesakies konsultācijai</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" onclick="closeLightbox(event)">
+  <span id="lightbox-close" onclick="closeLightbox()">×</span>
+  <video id="lightbox-video" controls controlsList="nodownload" playsinline></video>
+</div>
+
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 py-16 bg-surface-container-lowest">
+<div class="grid md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-8">
+<div class="space-y-6">
+<div class="text-xl font-black text-on-surface font-headline">ROIS</div>
+<p class="text-on-surface/40 text-sm leading-relaxed">Augstas efektivitātes digitālā mārketinga aģentūra Rīgā. Mēs ne tikai pērkam reklāmas laukumu, mēs būvējam peļņas mašīnas.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Pakalpojumi</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="google-ads.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Google Reklāma</a></li>
+<li><a href="meta-ads.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Meta Reklāma</a></li>
+<li><a href="web-development.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Mājaslapu izstrāde</a></li>
+<li><a href="branding.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Grafiskais Dizains</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Uzņēmums</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="about.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Par mums</a></li>
+<li><a href="clients.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Klienti</a></li>
+<li><a href="case-studies.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Darbi</a></li>
+<li><a href="atsauksmes.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Atsauksmes</a></li>
+<li><a href="contact.html" class="text-on-surface/40 hover:text-on-surface transition-colors">Kontakti</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xs uppercase tracking-widest mb-6">Sociālie</h4>
+<ul class="space-y-4 text-sm">
+<li><a href="https://www.linkedin.com/company/rois-lv" class="text-on-surface/40 hover:text-on-surface transition-colors">LinkedIn</a></li>
+<li><a href="https://www.instagram.com/rois.lv" class="text-on-surface/40 hover:text-on-surface transition-colors">Instagram</a></li>
+<li><a href="https://www.facebook.com/rois.lv" class="text-on-surface/40 hover:text-on-surface transition-colors">Facebook</a></li>
+<li><a href="https://www.tiktok.com/@rois.lv" class="text-on-surface/40 hover:text-on-surface transition-colors">TikTok</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-8 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between gap-4">
+<span class="text-on-surface/40 text-xs">© 2026 ROIS. Visas tiesības aizsargātas.</span>
+<div class="flex gap-8">
+<a href="privacy.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Privātuma politika</a>
+<a href="terms.html" class="text-on-surface/40 hover:text-on-surface text-xs transition-colors">Noteikumi</a>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu
+(function(){
+  var btn=document.getElementById('mobile-menu-btn');
+  var menu=document.getElementById('mobile-menu');
+  var icon=document.getElementById('menu-icon');
+  if(btn&&menu){
+    btn.addEventListener('click',function(){
+      var open=menu.classList.toggle('hidden');
+      icon.textContent=open?'menu':'close';
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(){
+        menu.classList.add('hidden');
+        icon.textContent='menu';
+      });
+    });
+  }
+})();
+
+// Lightbox
+function openVideo(src) {
+  var lb = document.getElementById('lightbox');
+  var vid = document.getElementById('lightbox-video');
+  vid.src = src;
+  lb.classList.add('open');
+  vid.play().catch(function(){});
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(e) {
+  if (e && e.target !== document.getElementById('lightbox') && e.target !== document.getElementById('lightbox-close')) return;
+  var vid = document.getElementById('lightbox-video');
+  vid.pause();
+  vid.src = '';
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox({target: document.getElementById('lightbox')});
+});
+</script>
+</body>
+</html>
